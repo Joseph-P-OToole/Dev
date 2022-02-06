@@ -41,48 +41,6 @@
     overflow-y: visible;
 }
 
-.aboutText {
-    line-height: 1.7rem;
-    margin-top: 20px;
-    z-index: 5;
-}
-
-.linkContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-a {
-    color: var(--colorAccent);
-    font-size: 1.7rem;
-    letter-spacing: .5rem;
-    cursor: pointer;
-    text-transform: lowercase;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    line-height: 3rem;
-    text-shadow: 0px 0px 10px var(--colorPrimary);
-}
-
-a:hover {
-    color: var(--colorTertiary);
-    text-shadow: 0px 0px 10px var(--colorTertiary);
-}
-
-a::selection {
-    color: var(--colorAccent);
-}
-
-a::shadow {
-    color: var(--colorAccent);
-}
-
-a:active {
-    color: var(--colorAccent);
-}
-
 .drip {
     opacity: 0;
 }
@@ -125,6 +83,48 @@ a:active {
 
 #drips10 {
     animation: drip 5s infinite ease-out;
+}
+
+.aboutText {
+    line-height: 1.7rem;
+    margin-top: 20px;
+    z-index: 5;
+}
+
+.linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: var(--colorAccent);
+    font-size: 1.7rem;
+    letter-spacing: .5rem;
+    cursor: pointer;
+    text-transform: lowercase;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    line-height: 3rem;
+    text-shadow: 0px 0px 10px var(--colorPrimary);
+}
+
+a:hover {
+    color: var(--colorTertiary);
+    text-shadow: 0px 0px 10px var(--colorTertiary);
+}
+
+a::selection {
+    color: var(--colorAccent);
+}
+
+a::shadow {
+    color: var(--colorAccent);
+}
+
+a:active {
+    color: var(--colorAccent);
 }
 
 @keyframes drip {
