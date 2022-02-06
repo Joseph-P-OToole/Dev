@@ -1,0 +1,174 @@
+
+.pageContent {
+    width: 90%;
+    background: var(--colorSecondary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: -4px 8px 12px rgba(0, 0, 0, 0.45);
+    max-width: 520px;
+}
+
+@media screen and (max-width: 800px) {
+    .pageContent {
+        max-width: 400px;
+    }
+}
+
+.aboutHeadlineWrapper {
+    width: 100%;
+    display: flex;
+    border-bottom: calc(var(--borderWidth) * 2) solid var(--colorAccent);
+    justify-content: space-around;
+    align-items: center;
+    -o-align-items: end;
+    flex-flow: row nowrap;
+    overflow-y: visible;
+    z-index: 10;
+}
+
+.aboutHeadline {
+    font-weight: 700;
+    line-height: 2.1rem;
+    font-size: 1.6rem; /* 2rem */
+    width: 30%;
+    max-width: 130px;
+    text-align: center;
+}
+
+.aboutIllustration {
+    width: clamp(50%, 100%, 240px);
+    fill: var(--colorAccent);
+    overflow-y: visible;
+}
+
+.aboutText {
+    line-height: 1.7rem;
+    margin-top: 20px;
+    z-index: 5;
+}
+
+.linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: var(--colorAccent);
+    font-size: 1.7rem;
+    letter-spacing: .5rem;
+    cursor: pointer;
+    text-transform: lowercase;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    line-height: 3rem;
+    text-shadow: 0px 0px 10px var(--colorPrimary);
+}
+
+a:hover {
+    color: var(--colorTertiary);
+    text-shadow: 0px 0px 10px var(--colorTertiary);
+}
+
+a::selection {
+    color: var(--colorAccent);
+}
+
+a::shadow {
+    color: var(--colorAccent);
+}
+
+a:active {
+    color: var(--colorAccent);
+}
+
+.drip {
+    opacity: 0;
+}
+
+#drips1 {
+    animation: drip 15s infinite ease-out;
+}
+
+#drips2 {
+    animation: drip 12s infinite ease-out;
+}
+
+#drips3 {
+    animation: drip 10s infinite ease-out;
+}
+
+#drips4 {
+    animation: drip 8s infinite ease-out;
+}
+
+#drips5 {
+    animation: drip 14s infinite ease-out;
+}
+
+#drips6 {
+    animation: drip 6s infinite ease-out;
+}
+
+#drips7 {
+    animation: drip 19s infinite ease-out;
+}
+
+#drips8 {
+    animation: drip 7s infinite ease-out;
+}
+
+#drips9 {
+    animation: drip 16s infinite ease-out;
+}
+
+#drips10 {
+    animation: drip 5s infinite ease-out;
+}
+
+@keyframes drip {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    12% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(80px);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .fullContainer {
+        margin: 0;
+        margin-left: 1.3rem;
+    }
+
+    .aboutHeadline {
+        font-size: 1.9rem;
+    }
+
+    .aboutIllustration {
+        width: 70%;
+        max-width: 400px;
+    }
+    
+    .skillImg {
+        max-height: 1000px;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .aboutHeadlineWrapper {
+        flex-flow: column nowrap;
+    }
+
+    .aboutHeadline {
+        max-width: 100%;
+        width: 100%;
+    }
+}

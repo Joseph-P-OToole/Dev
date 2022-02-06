@@ -1,0 +1,110 @@
+
+.page[b-ne99f7hwz6] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(closest-side, var(--colorBackground) 0%, #000 140%);
+    min-height: fit-content;
+}
+
+main[b-ne99f7hwz6] {
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+
+main[b-ne99f7hwz6]::-webkit-scrollbar {
+    width: 5px; 
+}
+
+main[b-ne99f7hwz6]::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+main[b-ne99f7hwz6]::-webkit-scrollbar-thumb {
+    background: var(--colorAccent);
+    border-radius: 25px;
+}
+
+.content[b-ne99f7hwz6] {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar[b-ne99f7hwz6] {
+    background-image: radial-gradient(closest-side, var(--colorSecondary) 10%, var(--colorPrimary) 180%);
+}
+
+.top-row[b-ne99f7hwz6] {
+    background-color: var(--colorPrimary);
+    border-bottom: var(--borderWidth) solid var(--colorAccent);
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+}
+
+    .top-row[b-ne99f7hwz6]  a, .top-row[b-ne99f7hwz6]  .btn-link {
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--colorAccent);
+    }
+
+    .top-row[b-ne99f7hwz6]  a:hover, .top-row[b-ne99f7hwz6]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-ne99f7hwz6]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 799.9px) {
+    .top-row:not(.auth)[b-ne99f7hwz6] {
+        display: none;
+    }
+
+    .top-row.auth[b-ne99f7hwz6] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-ne99f7hwz6]  a, .top-row[b-ne99f7hwz6]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .page[b-ne99f7hwz6] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-ne99f7hwz6] {
+        width: 250px;
+        min-height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-ne99f7hwz6] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-ne99f7hwz6]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-ne99f7hwz6], article[b-ne99f7hwz6] {
+        padding-right: 1.5rem !important;
+    }
+}

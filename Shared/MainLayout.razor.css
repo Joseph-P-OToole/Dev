@@ -1,0 +1,110 @@
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(closest-side, var(--colorBackground) 0%, #000 140%);
+    min-height: fit-content;
+}
+
+main {
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+
+main::-webkit-scrollbar {
+    width: 5px; 
+}
+
+main::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: var(--colorAccent);
+    border-radius: 25px;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    background-image: radial-gradient(closest-side, var(--colorSecondary) 10%, var(--colorPrimary) 180%);
+}
+
+.top-row {
+    background-color: var(--colorPrimary);
+    border-bottom: var(--borderWidth) solid var(--colorAccent);
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+}
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        white-space: nowrap;
+        text-decoration: none;
+        color: var(--colorAccent);
+    }
+
+    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row ::deep a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 799.9px) {
+    .top-row:not(.auth) {
+        display: none;
+    }
+
+    .top-row.auth {
+        justify-content: space-between;
+    }
+
+    .top-row ::deep a, .top-row ::deep .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .page {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 250px;
+        min-height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth ::deep a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row, article {
+        padding-right: 1.5rem !important;
+    }
+}

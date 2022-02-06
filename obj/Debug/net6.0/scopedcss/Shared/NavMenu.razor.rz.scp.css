@@ -1,0 +1,116 @@
+
+.navBar[b-ziw4e0urk9] {
+    z-index: 20;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-toggler[b-ziw4e0urk9] {
+    color: var(--nightAccentColor);
+}
+
+.navMenu[b-ziw4e0urk9] {
+    animation: slideFromTop 0.2s ease-in-out forwards;
+    z-index: 10;
+}
+
+.top-row[b-ziw4e0urk9] {
+    height: 3.5rem;
+    width: 100%;
+    background-color: var(--colorPrimary);
+    padding-top: 0;
+    margin: 0;
+    border-bottom: var(--borderWidth) solid var(--colorAccent);
+    z-index: 20;
+}
+
+.collapse[b-ziw4e0urk9] {
+    animation: slideFromTop 0.5s ease-in-out reverse forwards;
+}
+
+.container-fluid[b-ziw4e0urk9] {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.navbar-brand[b-ziw4e0urk9] {
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.navbar-brand > svg[b-ziw4e0urk9] {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.navbar-brand[b-ziw4e0urk9] {
+    font-size: 1.1rem;
+}
+
+
+
+.nav-item[b-ziw4e0urk9] {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: lowercase;
+}
+
+    .nav-item:first-of-type[b-ziw4e0urk9] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-ziw4e0urk9] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-ziw4e0urk9]  a {
+        color: var(--textSecondary);
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-ziw4e0urk9]  a.active {
+    background-color: rgba(0,0,0,0.9);
+    color: var(--colorAccent);
+}
+
+.nav-item[b-ziw4e0urk9]  a:hover {
+    background-color: rgba(0,0,0,0.7);
+    color: var(--colorTertiary);
+}
+
+@media (min-width: 800px) {
+    .navbar-toggler[b-ziw4e0urk9] {
+        display: none;
+    }
+
+    .collapse[b-ziw4e0urk9] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+        animation: none;
+    }
+
+    .container-fluid[b-ziw4e0urk9] {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navMenu[b-ziw4e0urk9] {
+        animation: none;
+    }
+    
+}

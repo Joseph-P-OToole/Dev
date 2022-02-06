@@ -1,0 +1,60 @@
+@page "/Skills"
+@inject SkillData SkillData;
+
+<PageTitle>Skills</PageTitle>
+<div class="pageContainer">
+    <div class="topContainer">
+        <div class="imageContainer">
+            <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+        </div>
+        <div class="textContainer">
+            <h4 class="skillName">
+                @galleryTitle
+            </h4>
+            <p class="skillDesc">
+                @galleryDescription
+            </p>
+            <a class=@($"skillLink { linkState } ") href=@($" { galleryLink }")>
+                <span class="oi oi-hand"></span>
+                @galleryLink
+            </a>
+        </div>
+    </div>
+    <div class="bottomContainer">
+        @for(int i = 0; i < SkillData.skillIcons.Count(); i++) {
+            int idx = i;
+            <div @onclick="() => SetGallery(idx)" class=@($"skillIconWrapper { getState(i) } ")>
+                <img class="skillIcon" src=@($"assets/techLogos/{ SkillData.skillIcons[i] }.png") alt=@($"{ SkillData.skillIcons[i] }") />
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    string galleryDescription = "";
+    string galleryTitle = "";
+    string galleryImage = "";
+    string galleryLink = "";
+    string linkState = "";
+    int selectedIdx = 0;
+    string iconState = "active";
+
+    private string getState(int idx) {
+        if(idx == selectedIdx) {
+            return "active";
+        }else {
+            return "";
+        }
+    }// getState
+
+    private async Task SetGallery(int idx) {
+        selectedIdx = idx;
+        iconState = "";
+        galleryDescription = SkillData.skillDescriptions[idx];
+        galleryTitle = SkillData.skillNames[idx];
+        galleryImage = SkillData.skillImages[idx];
+        StateHasChanged();
+        await Task.Delay(1);
+    }// SetGallery
+
+}
