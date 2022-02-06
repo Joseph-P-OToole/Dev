@@ -20,7 +20,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
+    height: 100%;
     background-color: #000;
 }
 
@@ -166,6 +166,9 @@ a, .btn-link {
     .fadeOut {
         opacity: 1;
         animation: fadeOut 0.5s forwards;
+        -webkit-animation: fadeOut 0.5s forwards;
+        -o-animation: fadeOut 0.5s forwards;
+        -moz-animation: fadeOut 0.5s forwards;
     }
 
     .fadeIn::before {
@@ -175,6 +178,9 @@ a, .btn-link {
     .fadeIn {
         opacity: 0;
         animation: fadeIn 0.5s forwards;
+        -webkit-animation: fadeIn 0.5s forwards;
+        -o-animation: fadeIn 0.5s forwards;
+        -moz-animation: fadeIn 0.5s forwards;
     }
 
     .slideFromRight::before {
@@ -184,6 +190,9 @@ a, .btn-link {
     .slideFromRight {
         transform: translateX(200%);
         animation: slideFromRight 0.5s forwards;
+        -webkit-animation: slideFromRight 0.5s forwards;
+        -o-animation: slideFromRight 0.5s forwards;
+        -moz-animation: slideFromRight 0.5s forwards
     }
 
     .slideFromLeft::before {
@@ -193,6 +202,9 @@ a, .btn-link {
     .slideFromLeft {
         transform: translateX(-200%);
         animation: slideFromLeft 0.5s forwards;
+        -webkit-animation: slideFromLeft 0.5s forwards;
+        -o-animation: slideFromLeft 0.5s forwards;
+        -moz-animation: slideFromLeft 0.5s forwards;
     }
 
     .slideFromBottom::before {
@@ -202,6 +214,9 @@ a, .btn-link {
     .slideFromBottom {
         transform: translateY(200%);
         animation: slideFromBottom 0.5s forwards;
+        -webkit-animation: slideFromBottom 0.5s forwards;
+        -o-animation: slideFromBottom 0.5s forwards;
+        -moz-animation: slideFromBottom 0.5s forwards;
     }
 
     .slideFromTop::before {
@@ -211,18 +226,40 @@ a, .btn-link {
     .slideFromTop {
         transform: translateY(-200%);
         animation: slideFromTop 0.5s forwards;
+        -webkit-animation: slideFromTop 0.5s forwards;
+        -o-animation: slideFromTop 0.5s forwards;
+        -moz-animation: slideFromTop 0.5s forwards;
+    }
+
+    .grow::before {
+        transform: scale(0);
     }
 
     .grow {
+        transform: scale(0);
         animation: grow 0.5s forwards;
+        -webkit-animation: grow 0.5s forwards;
+        -o-animation: grow 0.5s forwards;
+        -moz-animation: grow 0.5s forwards;
     }
     
+    .shrink::before {
+        transform: scale(3);
+    }
+
     .shrink {
+        transform: scale(3);
         animation: shrink 0.5s forwards;
+        -webkit-animation: shrink 0.5s forwards;
+        -o-animation: shrink 0.5s forwards;
+        -moz-animation: shrink 0.5s forwards;
     }
 
     .shake {
         animation: shake 0.5s repeat 5;
+        -webkit-animation: shake 0.5s repeat 5;
+        -o-animation: shake 0.5s repeat 5;
+        -moz-animation: shake 0.5s repeat 5;
     }
 
 
