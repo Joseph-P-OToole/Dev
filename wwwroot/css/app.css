@@ -159,28 +159,57 @@ a, .btn-link {
     }
 
     /* Animation */
+    .fadeOut::before {
+        opacity: 1;
+    }
 
     .fadeOut {
+        opacity: 1;
         animation: fadeOut 0.5s forwards;
     }
 
+    .fadeIn::before {
+        opacity: 0;
+    }
+
     .fadeIn {
+        opacity: 0;
         animation: fadeIn 0.5s forwards;
     }
 
+    .slideFromRight::before {
+        transform: translateX(200%);
+    }
+
     .slideFromRight {
+        transform: translateX(200%);
         animation: slideFromRight 0.5s forwards;
     }
 
+    .slideFromLeft::before {
+        transform: translateX(-200%);
+    }
+
     .slideFromLeft {
+        transform: translateX(-200%);
         animation: slideFromLeft 0.5s forwards;
     }
 
+    .slideFromBottom::before {
+        transform: translateY(200%);
+    }
+
     .slideFromBottom {
+        transform: translateY(200%);
         animation: slideFromBottom 0.5s forwards;
     }
 
+    .slideFromTop::before {
+        transform: translateY(-200%);
+    }
+
     .slideFromTop {
+        transform: translateY(-200%);
         animation: slideFromTop 0.5s forwards;
     }
 

@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -2018376967,
+        "HashCode": -1513456939,
         "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.About",
+        "Name": "BlazorWASMPortfolio.App",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "About"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.About"
+          "Common.TypeName": "BlazorWASMPortfolio.App"
         }
       },
       {
-        "HashCode": -2001085821,
+        "HashCode": 1138599083,
         "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.About",
+        "Name": "BlazorWASMPortfolio.App",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorWASMPortfolio.Pages.About"
+            "TagName": "BlazorWASMPortfolio.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.About",
+          "Common.TypeName": "BlazorWASMPortfolio.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -140,35 +140,68 @@
         }
       },
       {
-        "HashCode": -1513456939,
+        "HashCode": -2018376967,
         "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.App",
+        "Name": "BlazorWASMPortfolio.Pages.About",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.App"
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.About"
         }
       },
       {
-        "HashCode": 1138599083,
+        "HashCode": -2001085821,
         "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.App",
+        "Name": "BlazorWASMPortfolio.Pages.About",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorWASMPortfolio.App"
+            "TagName": "BlazorWASMPortfolio.Pages.About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.App",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.About",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1894604920,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Shared.NavMenu",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -548410536,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Shared.NavMenu",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -265,39 +298,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "BlazorWASMPortfolio.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1894604920,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Shared.NavMenu",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -548410536,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Shared.NavMenu",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorWASMPortfolio.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
