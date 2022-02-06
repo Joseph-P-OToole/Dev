@@ -1,0 +1,1 @@
+C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\publish\web.config
