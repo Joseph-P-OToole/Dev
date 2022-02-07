@@ -29,7 +29,7 @@
 .aboutHeadline[b-6j2xe0ay3m] {
     font-weight: 700;
     line-height: 2.1rem;
-    font-size: 1.6rem; /* 2rem */
+    font-size: 1.6rem;
     width: 30%;
     max-width: 130px;
     text-align: center;
@@ -170,5 +170,9 @@ a:active[b-6j2xe0ay3m] {
     .aboutHeadline[b-6j2xe0ay3m] {
         max-width: 100%;
         width: 100%;
+    }
+
+    .aboutText[b-6j2xe0ay3m] {
+        text-align: center;
     }
 }

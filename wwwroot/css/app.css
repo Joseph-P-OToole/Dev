@@ -237,10 +237,10 @@ a, .btn-link {
 
     .grow {
         transform: scale(0);
-        animation: grow 0.5s forwards;
-        -webkit-animation: grow 0.5s forwards;
-        -o-animation: grow 0.5s forwards;
-        -moz-animation: grow 0.5s forwards;
+        animation: grow 1s forwards ease-in;
+        -webkit-animation: grow 1s forwards ease-in;
+        -o-animation: grow 1s forwards ease-in;
+        -moz-animation: grow 1s forwards ease-in;
     }
     
     .shrink::before {
@@ -272,11 +272,30 @@ a, .btn-link {
         }
     }
 
+    @-webkit-keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+
     @keyframes fadeIn {
         0% {
             opacity: 0;
         }
         100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
             opacity: 1;
         }
     }
@@ -290,6 +309,15 @@ a, .btn-link {
         }
     }
 
+    @-webkit-keyframes slideFromRight {
+        from {
+            -webkit-transform: translateX(100%);
+        }
+        to {
+            -webkit-transform: translateX(0%);
+        }
+    }
+
     @keyframes slideFromLeft {
         0% {
             transform: translateX(-200%);
@@ -299,14 +327,30 @@ a, .btn-link {
         }
     }
 
+    @-webkit-keyframes slideFromLeft {
+        from {
+            -webkit-transform: translateX(-100%);
+        }
+        to {
+            -webkit-transform: translateX(0%);
+        }
+    }
+
     @keyframes slideFromTop {
         0% {
             transform: translateY(-200%);
-            opacity: 0;
         }
         100% {
             transform: translateY(0%);
-            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes slideFromTop {
+        from {
+            -webkit-transform: translateY(-100%);
+        }
+        to {
+            -webkit-transform: translateY(0%);
         }
     }
 
@@ -319,6 +363,15 @@ a, .btn-link {
         }
     }
 
+    @-webkit-keyframes slideFromBottom {
+        from {
+            -webkit-transform: translateY(100%);
+        }
+        to {
+            -webkit-transform: translateY(0%);
+        }
+    }
+
     @keyframes grow {
         0% {
             transform: scale(0);
@@ -328,12 +381,30 @@ a, .btn-link {
         }
     }
 
+    @-webkit-keyframes grow {
+        from {
+            -webkit-transform: scale(0);
+        }
+        to {
+            -webkit-transform: scale(1);
+        }
+    }
+
     @keyframes shrink {
         0% {
             transform: scale(3);
         }
         100% {
             transform: scale(1);
+        }
+    }
+
+    @-webkit-keyframes shrink {
+        from {
+            -webkit-transform: scale(3);
+        }
+        to {
+            -webkit-transform: scale(1);
         }
     }
 
@@ -352,5 +423,23 @@ a, .btn-link {
         }
         100% {
             transform: rotate(initial);
+        }
+    }
+
+    @-webkit-keyframes shake {
+        0% {
+            -webkit-transform: rotate(initial);
+        }
+        30% {
+            -webkit-transform: rotate(15deg);
+        }
+        60% {
+            -webkit-transform: rotate(-55deg);
+        }
+        90% {
+            -webkit-transform: rotate(15deg);
+        }
+        100% {
+            -webkit-transform: rotate(initial);
         }
     }

@@ -49,6 +49,8 @@ main::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     z-index: 20;
+    position: sticky;
+    top: 0;
 }
 
     .top-row ::deep a, .top-row ::deep .btn-link {
