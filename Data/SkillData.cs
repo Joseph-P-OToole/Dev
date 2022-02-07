@@ -17,6 +17,8 @@ public class SkillData {
                                         "This is a raffle website I built in Php using a Sql database. Users can post items they would like to raffle providing the item value and amount of tickets to be sold. All of the data is being stored and retrieved via Sql queries.",
                                         "sql lite"};
     public string[] skillIcons = {"python-icon", "js-icon", "cs-icon", "dot-net-core-icon", "blazor-icon", "java-icon", "android-icon", "php-icon", "ios-icon", "adobe-illustrator-icon", "adobe-photoshop-icon", "react-icon", "node-js-icon", "sql-icon", "sql-lite-icon"};
-    public string[] skillImages = {"python-image", "js-image", "cs-image", "dot-net-core-image", "blazor-image", "java-image", "android-image", "php-image", "ios-image", "adobe-illustrator-image", "adobe-photoshop-image", "react-image", "node-js-image", "sql-image", "sql-lite-image", "blazor-image"};
+    public string[] skillImages = {"python-image", "js-image", "cs-image", "dot-net-core-image", "blazor-image", "java-image", "android-image", "php-image", "ios-image", "adobe-illustrator-image", "adobe-photoshop-image", "react-image", "node-js-image", "sql-image", "sql-lite-image"};
+    
+    public string[] skillLinks = {"", "https://joseph-p-otoole.github.io/blackholeGame/", "", "https://automotiveta.com/", "" , "", "", "", "", "", "", "https://joseph-p-otoole.github.io/portfolio/", "", "", ""};
 
 }

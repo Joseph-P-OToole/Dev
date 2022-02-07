@@ -24,32 +24,11 @@ html, body {
     background-color: #000;
 }
 
-@media screen and (max-width: 800px) {
-    html {
-        font-size: .8em;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    html {
-        font-size: 1em;
-    }
-}
-
-@media screen and (min-width: 800px) and (orientation: landscape) {
-    .pageContainer {
-        height: 100vh;
-    }
-
-    .fullContainer {
-        min-height: 100vh;
-    }
-}
-
 .content, article {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    min-height: calc(100vh - 3.5rem);
+    height: auto;
 }
 
 body::-webkit-scrollbar {
@@ -158,6 +137,29 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+    .pageContainer {
+        height: 100vh;
+    }
+
+    .fullContainer {
+        min-height: 100vh;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: .8em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 1em;
+    }
+}
     /* Animation */
     .fadeOut::before {
         opacity: 1;
@@ -185,10 +187,12 @@ a, .btn-link {
 
     .slideFromRight::before {
         transform: translateX(200%);
+        -webkit-transform: -webkit-translateX(200%);
     }
 
     .slideFromRight {
         transform: translateX(200%);
+        -webkit-transform: -webkit-translateX(200%);
         animation: slideFromRight 0.5s forwards;
         -webkit-animation: slideFromRight 0.5s forwards;
         -o-animation: slideFromRight 0.5s forwards;
@@ -197,10 +201,12 @@ a, .btn-link {
 
     .slideFromLeft::before {
         transform: translateX(-200%);
+        -webkit-transform: -webkit-translateX(-200%);
     }
 
     .slideFromLeft {
         transform: translateX(-200%);
+        -webkit-transform: -webkit-translateX(-200%);
         animation: slideFromLeft 0.5s forwards;
         -webkit-animation: slideFromLeft 0.5s forwards;
         -o-animation: slideFromLeft 0.5s forwards;
@@ -209,10 +215,12 @@ a, .btn-link {
 
     .slideFromBottom::before {
         transform: translateY(200%);
+        -webkit-transform: -webkit-translateY(200%);
     }
 
     .slideFromBottom {
         transform: translateY(200%);
+        -webkit-transform: -webkit-translateY(200%);
         animation: slideFromBottom 0.5s forwards;
         -webkit-animation: slideFromBottom 0.5s forwards;
         -o-animation: slideFromBottom 0.5s forwards;
@@ -221,10 +229,12 @@ a, .btn-link {
 
     .slideFromTop::before {
         transform: translateY(-200%);
+        -webkit-transform: -webkit-translateY(-200%);
     }
 
     .slideFromTop {
         transform: translateY(-200%);
+        -webkit-transform: -webkit-translateY(-200%);
         animation: slideFromTop 0.5s forwards;
         -webkit-animation: slideFromTop 0.5s forwards;
         -o-animation: slideFromTop 0.5s forwards;
@@ -233,10 +243,12 @@ a, .btn-link {
 
     .grow::before {
         transform: scale(0);
+        -webkit-transform: -webkit-scale(0);
     }
 
     .grow {
         transform: scale(0);
+        -webkit-transform: -webkit-scale(0);
         animation: grow 1s forwards ease-in;
         -webkit-animation: grow 1s forwards ease-in;
         -o-animation: grow 1s forwards ease-in;
@@ -245,10 +257,12 @@ a, .btn-link {
     
     .shrink::before {
         transform: scale(3);
+        -webkit-transform: -webkit-scale(3);
     }
 
     .shrink {
         transform: scale(3);
+        -webkit-transform: -webkit-scale(3);
         animation: shrink 0.5s forwards;
         -webkit-animation: shrink 0.5s forwards;
         -o-animation: shrink 0.5s forwards;

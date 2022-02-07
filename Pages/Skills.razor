@@ -14,10 +14,13 @@
             <p class="skillDesc">
                 @galleryDescription
             </p>
-            <a class=@($"skillLink { linkState } ") href=@($" { galleryLink }")>
-                <span class="oi oi-hand"></span>
-                @galleryLink
-            </a>
+            @if(galleryLink != "")
+            {
+                <a class="skillLink" href=@($"{ @galleryLink }") target="_blank">
+                    @galleryLink
+                    <span class="oi oi-hand"></span>
+                </a>
+            }
         </div>
     </div>
     <div class="bottomContainer">
@@ -53,8 +56,16 @@
         galleryDescription = SkillData.skillDescriptions[idx];
         galleryTitle = SkillData.skillNames[idx];
         galleryImage = SkillData.skillImages[idx];
+        galleryLink = SkillData.skillLinks[idx];
         StateHasChanged();
         await Task.Delay(1);
     }// SetGallery
 
+    protected override async Task OnAfterRenderAsync(bool firstRender) {
+        if(firstRender) {
+            await Task.Delay(1);
+            await SetGallery(0);
+            StateHasChanged();
+        }
+    }// OnAfterRenderAsync
 }

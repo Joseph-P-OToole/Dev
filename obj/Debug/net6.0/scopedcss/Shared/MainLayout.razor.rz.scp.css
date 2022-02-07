@@ -10,6 +10,7 @@
 main[b-ne99f7hwz6] {
     display: flex;
     overflow-x: hidden;
+    overflow-y: auto;
     align-items: center;
     justify-content: center;
     flex: 1 1 100%;

@@ -8,12 +8,6 @@
     max-width: 520px;
 }
 
-@media screen and (max-width: 800px) {
-    .pageContent {
-        max-width: 400px;
-    }
-}
-
 .aboutHeadlineWrapper {
     width: 100%;
     display: flex;
@@ -32,7 +26,7 @@
     font-size: 1.6rem;
     width: 30%;
     max-width: 130px;
-    text-align: center;
+    text-align: left;
 }
 
 .aboutIllustration {
@@ -88,6 +82,7 @@
 .aboutText {
     line-height: 1.7rem;
     margin-top: 20px;
+    text-align: left;
     z-index: 5;
 }
 
@@ -147,7 +142,7 @@ a:active {
     }
 
     .aboutHeadline {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
 
     .aboutIllustration {
@@ -162,7 +157,43 @@ a:active {
 }
 
 
+@media screen and (max-width: 800px) {
+    .pageContent {
+        max-width: 400px;
+    }
+}
+
+
+@media screen 
+and (max-height: 600px)
+and (max-width: 1000px)
+and (orientation: landscape) {
+    .aboutHeadline {
+        font-size: 1.4rem;
+        max-width: 100px;
+    }
+
+    .aboutIllustration {
+        width: 70%;
+        max-width: 300px;
+    }
+    
+    .pageContent {
+        max-width: 95%;
+    }
+
+    .fullContainer {
+        flex-flow: row nowrap;
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 400px) {
+    
+    .pageContent {
+        padding: 10px;
+    }
+
     .aboutHeadlineWrapper {
         flex-flow: column nowrap;
     }
@@ -170,6 +201,7 @@ a:active {
     .aboutHeadline {
         max-width: 100%;
         width: 100%;
+        text-align: center;
     }
 
     .aboutText {
