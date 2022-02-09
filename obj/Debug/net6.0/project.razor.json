@@ -41,39 +41,6 @@
         }
       },
       {
-        "HashCode": 890488435,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.Contact",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Contact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.Contact"
-        }
-      },
-      {
-        "HashCode": -1128239227,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.Contact",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorWASMPortfolio.Pages.Contact"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.Contact",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 2047993225,
         "Kind": "Components.Component",
         "Name": "BlazorWASMPortfolio.Pages.Index",
@@ -103,6 +70,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorWASMPortfolio.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -517148678,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Skills",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Skills"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Skills"
+        }
+      },
+      {
+        "HashCode": -1573605512,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Skills",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Pages.Skills"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Skills",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -140,35 +140,35 @@
         }
       },
       {
-        "HashCode": -517148678,
+        "HashCode": 890488435,
         "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.Skills",
+        "Name": "BlazorWASMPortfolio.Pages.Contact",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Skills"
+            "TagName": "Contact"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.Skills"
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Contact"
         }
       },
       {
-        "HashCode": -1573605512,
+        "HashCode": -1128239227,
         "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.Skills",
+        "Name": "BlazorWASMPortfolio.Pages.Contact",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorWASMPortfolio.Pages.Skills"
+            "TagName": "BlazorWASMPortfolio.Pages.Contact"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.Skills",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Contact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

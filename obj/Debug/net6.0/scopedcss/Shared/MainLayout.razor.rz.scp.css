@@ -107,7 +107,7 @@ main[b-ne99f7hwz6]::-webkit-scrollbar-thumb {
         width: 0;
     }
 
-    .top-row[b-ne99f7hwz6], article[b-ne99f7hwz6] {
+    .top-row[b-ne99f7hwz6] {
         padding-right: 1.5rem !important;
     }
 }

@@ -222,6 +222,7 @@ and (max-width: 900px)
 and (max-height: 900px) {
     .imageContainer[b-4vqho6uctf] {
         max-height: 180px;
+        align-self: center;
     }
     .skillImg[b-4vqho6uctf] {
         max-height: 160px;

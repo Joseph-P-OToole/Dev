@@ -22,10 +22,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/otool/Documents/TriOS/Blazor/BlazorWASMPortfolio/Pages/Contact.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/otool/Documents/TriOS/Blazor/BlazorWASMPortfolio/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +29,10 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/otool/Documents/TriOS/Blazor/BlazorWASMPortfolio/Pages/About.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6j2xe0ay3m
+
+[C:/Users/otool/Documents/TriOS/Blazor/BlazorWASMPortfolio/Pages/Contact.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ef8rk3pjgd
 
 [C:/Users/otool/Documents/TriOS/Blazor/BlazorWASMPortfolio/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=

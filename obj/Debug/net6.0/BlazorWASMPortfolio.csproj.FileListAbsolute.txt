@@ -818,3 +818,4 @@ C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scope
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\About.razor.rz.scp.css
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\package-lock.json
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\package.json
+C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Contact.razor.rz.scp.css

@@ -1,0 +1,76 @@
+
+.pageContainer[b-ef8rk3pjgd] {
+    justify-content: space-between;
+    background: var(--colorPrimary);
+}
+
+h1[b-ef8rk3pjgd] {
+    color: var(--colorSecondary);
+    text-align: center;
+    padding: 20px;
+}
+
+.iconWrapper[b-ef8rk3pjgd] {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.contactIcon[b-ef8rk3pjgd] {
+    width: 50px;
+    height: 50px;
+    fill: var(--colorAccent);
+    padding: 2%;
+    border-radius: 50%;
+    border: calc(var(--borderWidth) * 1.5) solid var(--colorAccent);
+}
+
+.upperAccent[b-ef8rk3pjgd] {
+    clip-path: polygon(0% 0%, 22.75% 59%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 300px;
+    background:url("assets/bkg/contactBkg.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    opacity: .6;
+}
+
+.lowerAccent[b-ef8rk3pjgd] {
+    clip-path: polygon(0% 0%, 22.75% 59%, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 300px;
+    background:url("assets/bkg/contactBkg.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: bottom;
+    opacity: .6;
+}
+
+@media screen and (min-width: 900px) {
+    .contactIcon[b-ef8rk3pjgd] {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contactIcon[b-ef8rk3pjgd] {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contactIcon[b-ef8rk3pjgd] {
+        width: 40px;
+        height: 40px;
+    }
+}
