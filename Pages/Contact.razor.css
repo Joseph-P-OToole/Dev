@@ -8,6 +8,7 @@ h1 {
     color: var(--colorSecondary);
     text-align: center;
     padding: 20px;
+    text-shadow: -2px 2px 2px #fff3;
 }
 
 .iconWrapper {
@@ -17,7 +18,7 @@ h1 {
     flex-direction: row wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 5px;
+    padding: 20px 5px;
     border-radius: 8px;
 }
 
@@ -28,6 +29,7 @@ h1 {
     padding: 2%;
     border-radius: 50%;
     border: calc(var(--borderWidth) * 1.5) solid var(--colorAccent);
+    box-shadow: 0px 0px 4px var(--colorAccent);
 }
 
 .upperAccent {
