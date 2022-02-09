@@ -19,7 +19,6 @@ h1 {
     align-items: center;
     padding: 10px 5px;
     border-radius: 8px;
-    opacity: 0.9;
 }
 
 .contactIcon {
@@ -41,7 +40,7 @@ h1 {
     background-repeat: repeat;
     background-position: center;
     transform: rotate(180deg);
-    opacity: .6;
+    opacity: .9;
 }
 
 .lowerAccent {
@@ -53,7 +52,7 @@ h1 {
     background-size: cover;
     background-repeat: repeat;
     background-position: bottom;
-    opacity: .6;
+    opacity: .9;
 }
 
 @media screen and (min-width: 900px) {
