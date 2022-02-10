@@ -16,8 +16,8 @@ public class SkillData {
                                         "This is a joke website I built using NodeJs and Express. It is retrieving random jokes via the Chuck Norris API and randomly selecting a background image of the legend himself.",
                                         "This is a raffle website I built in Php using a SQL database. Users can post items they would like to raffle providing the item value and amount of tickets to be sold. All of the data is being stored and retrieved via SQL queries.",
                                         "This is a coffee order app I built in IOS using Swift and SQL Lite. It allows users to create coffee orders with common drinks and custom ingredients. Users can also nickname and save the orders."};
-    public string[] skillIcons = {"python-icon", "js-icon", "cs-icon", "dot-net-core-icon", "blazor-icon", "java-icon", "android-icon", "php-icon", "ios-icon", "adobe-illustrator-icon", "adobe-photoshop-icon", "react-icon", "node-js-icon", "SQL-icon", "SQL-lite-icon"};
-    public string[] skillImages = {"python-image", "js-image", "cs-image", "dot-net-core-image", "blazor-image", "java-image", "android-image", "php-image", "ios-image", "adobe-illustrator-image", "adobe-photoshop-image", "react-image", "node-js-image", "SQL-image", "SQL-lite-image"};
+    public string[] skillIcons = {"python-icon", "js-icon", "cs-icon", "dot-net-core-icon", "blazor-icon", "java-icon", "android-icon", "php-icon", "ios-icon", "adobe-illustrator-icon", "adobe-photoshop-icon", "react-icon", "node-js-icon", "sql-icon", "sql-lite-icon"};
+    public string[] skillImages = {"python-image", "js-image", "cs-image", "dot-net-core-image", "blazor-image", "java-image", "android-image", "php-image", "ios-image", "adobe-illustrator-image", "adobe-photoshop-image", "react-image", "node-js-image", "sql-image", "sql-lite-image"};
     
     public string[] skillLinks = {"", "https://joseph-p-otoole.github.io/blackholeGame/", "", "https://automotiveta.com/", "" , "", "", "", "", "", "", "https://joseph-p-otoole.github.io/portfolio/", "", "", ""};
 
