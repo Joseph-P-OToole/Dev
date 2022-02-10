@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "teg7yku+Vo3ZtVSGAl6I/Cw7iw2MfEzBJheSADhAJ6c=",
+  "Hash": "7h7scZGFaASAzO4jiTrIVB3CRUYNpVKAhOwQzqFu1Y0=",
   "Source": "BlazorWASMPortfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -7157,6 +7157,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshots\\dot-net-core-image.png"
     },
     {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\dotnet-core-image.png",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/screenshots/dotnet-core-image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\screenshots\\dotnet-core-image.png"
+    },
+    {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\ios-image.png",
       "SourceId": "BlazorWASMPortfolio",
       "SourceType": "Discovered",
@@ -7172,6 +7189,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\screenshots\\ios-image.png"
+    },
+    {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\java-image.png",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/screenshots/java-image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\screenshots\\java-image.png"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\js-image.png",
@@ -7310,6 +7344,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshots\\New folder\\java-image.jpg"
     },
     {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\New folder\\java-image.jpg - Shortcut.lnk",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/screenshots/New folder/java-image.jpg - Shortcut.lnk",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\screenshots\\New folder\\java-image.jpg - Shortcut.lnk"
+    },
+    {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\New folder\\js-image.png",
       "SourceId": "BlazorWASMPortfolio",
       "SourceType": "Discovered",
@@ -7427,6 +7478,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\screenshots\\New folder\\sql-image.png"
+    },
+    {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\New folder\\Wireframe.PNG",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/screenshots/New folder/Wireframe.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\screenshots\\New folder\\Wireframe.PNG"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\node-js-image.png",
