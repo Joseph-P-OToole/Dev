@@ -42,22 +42,19 @@
     grid-column: 1;
     grid-row: 1/ span 3;
     max-height: 600px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .skillImg[b-4vqho6uctf] {
-    max-height: 400px;
     width: 100%;
-    max-width: 600px;
-    aspect-ratio: initial;
+    max-width: 800px;
+    max-height: 500px;
+    aspect-ratio: 4 / 2.35;
     opacity: 0;
     animation: 1s fadeIn forwards;
-    border: calc( var(--borderWidth) * 2) solid var(--secondaryColor);
-    border-radius: 4px;
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .textContainer[b-4vqho6uctf] {
