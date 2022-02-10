@@ -52,7 +52,6 @@
     width: 100%;
     max-width: 800px;
     max-height: 500px;
-    aspect-ratio: 4 / 2.35;
     opacity: 0;
     animation: 1s fadeIn forwards;
 }
