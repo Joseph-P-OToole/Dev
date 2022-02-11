@@ -4,7 +4,7 @@
 <PageTitle>Skills</PageTitle>
 <div class="pageContainer">
     <div class="topContainer">
-        <div class="imageContainer">
+        <div @onclick="() => SetLightBox( )" class="imageContainer">
             <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
         </div>
         <div class="textContainer">
@@ -32,15 +32,24 @@
         }
     </div>
 </div>
+<div @onclick="() => ClearContent()" class=@($"lightBox { lightBoxClassName }")>
+    <div class="contentContainer">
+        @if(contentSet) {
+            <img class="lightBoxImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+        }
+    </div>
+</div>
 
 @code {
     string galleryDescription = "";
     string galleryTitle = "";
-    string galleryImage = "";
+    string galleryImage = "assets/screenshots/python-image.png";
     string galleryLink = "";
-    string linkState = "";
-    int selectedIdx = 0;
-    string iconState = "active";
+    int selectedIdx = -1;
+    bool contentSet = false;
+    string content = "";
+    string iconState = "";
+    string lightBoxClassName = "hide";
 
     private string getState(int idx) {
         if(idx == selectedIdx) {
@@ -51,21 +60,48 @@
     }// getState
 
     private async Task SetGallery(int idx) {
-        selectedIdx = idx;
-        iconState = "";
-        galleryDescription = SkillData.skillDescriptions[idx];
-        galleryTitle = SkillData.skillNames[idx];
-        galleryImage = SkillData.skillImages[idx];
-        galleryLink = SkillData.skillLinks[idx];
-        StateHasChanged();
-        await Task.Delay(1);
+        if(idx != -1) {
+            selectedIdx = idx;
+            iconState = "";
+            galleryDescription = SkillData.skillDescriptions[idx];
+            galleryTitle = SkillData.skillNames[idx];
+            galleryImage = SkillData.skillImages[idx];
+            galleryLink = SkillData.skillLinks[idx];
+            await Task.Delay(1);
+            StateHasChanged();
+        }else {
+            return;
+        }
     }// SetGallery
 
     protected override async Task OnAfterRenderAsync(bool firstRender) {
         if(firstRender) {
-            await Task.Delay(1);
             await SetGallery(0);
             StateHasChanged();
         }
     }// OnAfterRenderAsync
+
+    private void lightBoxSetClassName() {
+        if(contentSet) {
+            lightBoxClassName = "show fadeIn";
+        }else {
+            lightBoxClassName = "show fadeOut";
+            StateHasChanged();
+            Task.Delay(500);
+            lightBoxClassName = "hide";
+        }
+    }// lightBoxCetClassName
+
+    public async void SetLightBox() {
+        contentSet = true;
+        lightBoxSetClassName();
+        await Task.Delay(1);
+    }// SetLightBox
+
+    public void ClearContent() {
+        contentSet = false;
+        this.content = "";
+        lightBoxSetClassName();
+        StateHasChanged();
+    }// ClearContent
 }
