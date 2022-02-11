@@ -269,39 +269,6 @@
         }
       },
       {
-        "HashCode": -1283827170,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Shared.LightBox",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LightBox"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Shared.LightBox"
-        }
-      },
-      {
-        "HashCode": 1092260329,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Shared.LightBox",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorWASMPortfolio.Shared.LightBox"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Shared.LightBox",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1513456939,
         "Kind": "Components.Component",
         "Name": "BlazorWASMPortfolio.App",

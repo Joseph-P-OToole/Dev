@@ -5,7 +5,9 @@
 <div class="pageContainer">
     <div class="topContainer">
         <div @onclick="() => SetLightBox( )" class="imageContainer">
-            <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+            @if(galleryImage != "") {
+                <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+            }
         </div>
         <div class="textContainer">
             <h4 class="skillName">
