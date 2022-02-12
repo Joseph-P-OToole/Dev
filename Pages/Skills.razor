@@ -49,8 +49,6 @@
     string galleryLink = "";
     int selectedIdx = -1;
     bool contentSet = false;
-    string content = "";
-    string iconState = "";
     string lightBoxClassName = "hide";
 
     private string getState(int idx) {
@@ -64,7 +62,6 @@
     private async Task SetGallery(int idx) {
         if(idx != -1) {
             selectedIdx = idx;
-            iconState = "";
             galleryDescription = SkillData.skillDescriptions[idx];
             galleryTitle = SkillData.skillNames[idx];
             galleryImage = SkillData.skillImages[idx];
@@ -102,7 +99,6 @@
 
     public void ClearContent() {
         contentSet = false;
-        this.content = "";
         lightBoxSetClassName();
         StateHasChanged();
     }// ClearContent

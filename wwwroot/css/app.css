@@ -13,13 +13,15 @@
     --maxWidth: 1200px;
     --borderWidth: 2px;
 }
-
-html, body {
-    font-family: Overpass, sans-serif;
-    min-height: fit-content;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    min-height: fit-content;
+    font-family: Overpass, sans-serif;
     height: 100vh;
     background-color: #000;
 }
@@ -139,6 +141,17 @@ a, .btn-link {
 
 
 @media screen and (min-width: 800px) and (orientation: landscape) {
+    .pageContainer {
+        height: 100vh;
+    }
+
+    .fullContainer {
+        min-height: 100vh;
+        height: fit-content;
+    }
+}
+
+@media screen and (min-width: 800px) and (orientation: portrait) {
     .pageContainer {
         height: 100vh;
     }
