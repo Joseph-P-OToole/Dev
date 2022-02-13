@@ -4,12 +4,12 @@
 <PageTitle>Skills</PageTitle>
 <div class="pageContainer">
     <div class="topContainer">
-        <div @onclick="() => SetLightBox( )" class="imageContainer">
+        <div @onclick="() => SetLightBox()" class="imageContainer disableSelect">
             @if(galleryImage != "") {
-                <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+                <img class=@($"skillImg { imgBoxClassName }") src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
             }
         </div>
-        <div class="textContainer">
+        <div class=@($"textContainer { imgBoxClassName }") >
             <h4 class="skillName">
                 @galleryTitle
             </h4>
@@ -28,8 +28,8 @@
     <div class="bottomContainer">
         @for(int i = 0; i < SkillData.skillIcons.Count(); i++) {
             int idx = i;
-            <div @onclick="() => SetGallery(idx)" class=@($"skillIconWrapper { getState(i) } ")>
-                <img class="skillIcon" src=@($"assets/techLogos/{ SkillData.skillIcons[i] }.png") alt=@($"{ SkillData.skillIcons[i] }") />
+            <div @onclick="() => SetGallery(idx)" class=@($"skillIconWrapper disableSelect { getState(i) } ")>
+                <img class="skillIcon disableSelect" src=@($"assets/techLogos/{ SkillData.skillIcons[i] }.png") alt=@($"{ SkillData.skillIcons[i] }") />
             </div>
         }
     </div>
@@ -49,7 +49,10 @@
     string galleryLink = "";
     int selectedIdx = -1;
     bool contentSet = false;
+    string imgBoxClassName = "";
+    string textBoxClassName = "";
     string lightBoxClassName = "hide";
+    bool firstLoad = true;
 
     private string getState(int idx) {
         if(idx == selectedIdx) {
@@ -61,11 +64,21 @@
 
     private async Task SetGallery(int idx) {
         if(idx != -1) {
+            if(firstLoad) {
+                imgBoxClassName = "imgInactive";
+                textBoxClassName = "textInactive";
+                await Task.Delay(200);
+                StateHasChanged();
+            }
             selectedIdx = idx;
             galleryDescription = SkillData.skillDescriptions[idx];
             galleryTitle = SkillData.skillNames[idx];
             galleryImage = SkillData.skillImages[idx];
             galleryLink = SkillData.skillLinks[idx];
+            if(firstLoad) {
+                imgBoxClassName = "imgActive";
+                textBoxClassName = "textActive";
+            }
             await Task.Delay(1);
             StateHasChanged();
         }else {

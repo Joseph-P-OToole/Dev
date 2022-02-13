@@ -18,6 +18,7 @@
     grid-template-columns: repeat(auto, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     animation: slideFromBottom 0.5s ease-in-out;
+    overflow-x: hidden;
 }
 
 .topContainer[b-4vqho6uctf] {
@@ -54,8 +55,20 @@
     height: 131px;
     max-width: 100%;
     aspect-ratio: 16 / 10;
-    opacity: 0;
-    animation: 1s fadeIn forwards;
+}
+
+.imgActive[b-4vqho6uctf] {
+    animation: .3s slideFromRight forwards;
+    -webkit-animation: .3s slideFromRight forwards;
+    -moz-animation: .3s slideFromRight forwards;
+    -o-animation: .3s slideFromRight forwards;
+}
+
+.imgInactive[b-4vqho6uctf] {
+    animation: .3s slideFromLeft reverse;
+    -webkit-animation: .3s slideFromLeft reverse;
+    -moz-animation: .3s slideFromLeft reverse;
+    -o-animation: .3s slideFromLeft reverse;
 }
 
 .textContainer[b-4vqho6uctf] {
@@ -97,9 +110,10 @@
     grid-gap: .5rem;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto, 1fr);
-    border: 2px solid #4445;
-    border-bottom: 2px solid #2222;
     animation: slideFromRight 0.5s ease-in-out;
+    -webkit-animation: slideFromRight 0.5s ease-in-out;
+    -moz-animation: slideFromRight 0.5s ease-in-out;
+    -o-animation: slideFromRight 0.5s ease-in-out;
     overflow-y: scroll;
 }
 
@@ -159,7 +173,7 @@
     transform: scale(1);
 }
 
-/* lightbox */
+/* lightBox */
 
 .lightBox[b-4vqho6uctf] {
     width: 100%;
@@ -273,7 +287,7 @@ and (min-width: 330px) {
 }
 
 @media screen
-and (min-width: 550px)
+and (min-width: 600px)
 and (orientation: portrait) {
     .skillImg[b-4vqho6uctf] {
         width: 400px;

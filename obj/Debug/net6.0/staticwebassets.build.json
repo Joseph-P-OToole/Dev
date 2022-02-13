@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7h7scZGFaASAzO4jiTrIVB3CRUYNpVKAhOwQzqFu1Y0=",
+  "Hash": "/1f6aqs0y0K9lUkkA6fxre7cxQZP0Cjeyi/6wnze89c=",
   "Source": "BlazorWASMPortfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -6834,23 +6834,6 @@
       "OriginalItemSpec": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorWASMPortfolio.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\bkg2.JPG",
-      "SourceId": "BlazorWASMPortfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "assets/bkg/bkg2.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\bkg\\bkg2.JPG"
-    },
-    {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\contactBkg.jpg",
       "SourceId": "BlazorWASMPortfolio",
       "SourceType": "Discovered",
@@ -6868,12 +6851,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\bkg\\contactBkg.jpg"
     },
     {
-      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\pexels-fiona-art-4300128.jpg",
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\skillBkg2.jpg",
       "SourceId": "BlazorWASMPortfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "assets/bkg/pexels-fiona-art-4300128.jpg",
+      "RelativePath": "assets/bkg/skillBkg2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6882,41 +6865,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\bkg\\pexels-fiona-art-4300128.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\tile_background.png",
-      "SourceId": "BlazorWASMPortfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "assets/bkg/tile_background.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\bkg\\tile_background.png"
-    },
-    {
-      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\tile_background2.png",
-      "SourceId": "BlazorWASMPortfolio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "assets/bkg/tile_background2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\bkg\\tile_background2.png"
+      "OriginalItemSpec": "wwwroot\\assets\\bkg\\skillBkg2.jpg"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\icons\\Indeed.png",
@@ -7580,6 +7529,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\screenshots\\sql-image.png"
+    },
+    {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\sql-lite-image.png",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/screenshots/sql-lite-image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\screenshots\\sql-lite-image.png"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\techLogos\\adobe-illustrator-icon.png",

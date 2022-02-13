@@ -140,6 +140,16 @@ a, .btn-link {
     }
 
 
+.disableSelect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Old version of Firefox */
+    -ms-user-select: none; /* Internet Explorer or Edge */
+    user-select: none; /* All modern browsers */
+}
+
+
 @media screen and (min-width: 800px) and (orientation: landscape) {
     .pageContainer {
         height: 100vh;
@@ -289,7 +299,6 @@ a, .btn-link {
         -moz-animation: shake 0.5s repeat 5;
     }
 
-
     @keyframes fadeOut {
         0% {
             opacity: 1;
@@ -299,16 +308,33 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes fadeOut {
-        from {
-            opacity: 1;
+        @-webkit-keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
         }
-        to {
-            opacity: 0;
-        }
-    }
-    
 
+        @-o-keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        @-moz-keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+    
     @keyframes fadeIn {
         0% {
             opacity: 0;
@@ -318,14 +344,32 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-        to {
-            opacity: 1;
+
+        @-o-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-    }
+
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
 
     @keyframes slideFromRight {
         0% {
@@ -336,14 +380,32 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes slideFromRight {
-        from {
-            -webkit-transform: translateX(100%);
+        @-webkit-keyframes slideFromRight {
+            from {
+                -webkit-transform: translateX(100%);
+            }
+            to {
+                -webkit-transform: translateX(0%);
+            }
         }
-        to {
-            -webkit-transform: translateX(0%);
+
+        @-o-keyframes slideFromRight {
+            from {
+                -o-transform: translateX(100%);
+            }
+            to {
+                -o-transform: translateX(0%);
+            }
         }
-    }
+
+        @-moz-keyframes slideFromRight {
+            from {
+                -moz-transform: translateX(100%);
+            }
+            to {
+                -moz-transform: translateX(0%);
+            }
+        }
 
     @keyframes slideFromLeft {
         0% {
@@ -354,14 +416,32 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes slideFromLeft {
-        from {
-            -webkit-transform: translateX(-100%);
+        @-webkit-keyframes slideFromLeft {
+            from {
+                -webkit-transform: translateX(-100%);
+            }
+            to {
+                -webkit-transform: translateX(0%);
+            }
         }
-        to {
-            -webkit-transform: translateX(0%);
+
+        @-o-keyframes slideFromLeft {
+            from {
+                -o-transform: translateX(-100%);
+            }
+            to {
+                -o-transform: translateX(0%);
+            }
         }
-    }
+
+        @-moz-keyframes slideFromLeft {
+            from {
+                -moz-transform: translateX(-100%);
+            }
+            to {
+                -moz-transform: translateX(0%);
+            }
+        }
 
     @keyframes slideFromTop {
         0% {
@@ -372,14 +452,32 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes slideFromTop {
-        from {
-            -webkit-transform: translateY(-100%);
+        @-webkit-keyframes slideFromTop {
+            from {
+                -webkit-transform: translateY(-100%);
+            }
+            to {
+                -webkit-transform: translateY(0%);
+            }
         }
-        to {
-            -webkit-transform: translateY(0%);
+
+        @-o-keyframes slideFromTop {
+            from {
+                -o-transform: translateY(-100%);
+            }
+            to {
+                -o-transform: translateY(0%);
+            }
         }
-    }
+
+        @-moz-keyframes slideFromTop {
+            from {
+                -moz-transform: translateY(-100%);
+            }
+            to {
+                -moz-transform: translateY(0%);
+            }
+        }
 
     @keyframes slideFromBottom {
         0% {
@@ -389,16 +487,34 @@ a, .btn-link {
             transform: translateY(0%);
         }
     }
-
-    @-webkit-keyframes slideFromBottom {
-        from {
-            -webkit-transform: translateY(100%);
+    
+        @-webkit-keyframes slideFromBottom {
+            from {
+                -webkit-transform: translateY(100%);
+            }
+            to {
+                -webkit-transform: translateY(0%);
+            }
         }
-        to {
-            -webkit-transform: translateY(0%);
+    
+        @-o-keyframes slideFromBottom {
+            from {
+                -webkit-transform: translateY(100%);
+            }
+            to {
+                -webkit-transform: translateY(0%);
+            }
         }
-    }
 
+        @-moz-keyframes slideFromBottom {
+            from {
+                -webkit-transform: translateY(100%);
+            }
+            to {
+                -webkit-transform: translateY(0%);
+            }
+        }
+    
     @keyframes grow {
         0% {
             transform: scale(0);
@@ -408,14 +524,32 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes grow {
-        from {
-            -webkit-transform: scale(0);
+        @-webkit-keyframes grow {
+            from {
+                -webkit-transform: scale(0);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
         }
-        to {
-            -webkit-transform: scale(1);
+
+        @-o-keyframes grow {
+            from {
+                -webkit-transform: scale(0);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
         }
-    }
+
+        @-moz-keyframes grow {
+            from {
+                -webkit-transform: scale(0);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
+        }
 
     @keyframes shrink {
         0% {
@@ -426,14 +560,32 @@ a, .btn-link {
         }
     }
 
-    @-webkit-keyframes shrink {
-        from {
-            -webkit-transform: scale(3);
+        @-webkit-keyframes shrink {
+            from {
+                -webkit-transform: scale(3);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
         }
-        to {
-            -webkit-transform: scale(1);
+
+        @-o-keyframes shrink {
+            from {
+                -webkit-transform: scale(3);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
         }
-    }
+
+        @-moz-keyframes shrink {
+            from {
+                -webkit-transform: scale(3);
+            }
+            to {
+                -webkit-transform: scale(1);
+            }
+        }
 
     @keyframes shake {
         0% {
