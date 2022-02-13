@@ -1,12 +1,13 @@
-@page "/Skills"
+@page "/Samples"
 @inject SkillData SkillData;
 
 <PageTitle>Skills</PageTitle>
 <div class="pageContainer">
     <div class="topContainer">
-        <div @onclick="() => SetLightBox()" class="imageContainer disableSelect">
+        <div @onclick="() => SetLightBox()" class=@($"imageContainer disableSelect { imgBoxClassName }")>
             @if(galleryImage != "") {
-                <img class=@($"skillImg { imgBoxClassName }") src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+                <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+                <h4>click to expand</h4>
             }
         </div>
         <div class=@($"textContainer { imgBoxClassName }") >
@@ -48,6 +49,7 @@
     string galleryImage = "";
     string galleryLink = "";
     int selectedIdx = -1;
+    int lastIdx = -1;
     bool contentSet = false;
     string imgBoxClassName = "";
     string textBoxClassName = "";

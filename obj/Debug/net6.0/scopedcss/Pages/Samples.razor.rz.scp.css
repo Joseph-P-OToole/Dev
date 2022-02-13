@@ -1,12 +1,12 @@
 
-.pageContainer {
+.pageContainer[b-ygmnus5is1] {
     max-width: 1800px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.topContainer {
+.topContainer[b-ygmnus5is1] {
     width: 95%;
     height: 60%;
     grid-row: 3/7;
@@ -21,57 +21,66 @@
     overflow-x: hidden;
 }
 
-.topContainer {
+.topContainer[b-ygmnus5is1] {
     overflow-y: scroll;
 }
 
-.topContainer::-webkit-scrollbar {
+.topContainer[b-ygmnus5is1]::-webkit-scrollbar {
     width: 5px; 
 }
 
-.topContainer::-webkit-scrollbar-track {
+.topContainer[b-ygmnus5is1]::-webkit-scrollbar-track {
     background-color: black;
 }
 
-.topContainer::-webkit-scrollbar-thumb {
+.topContainer[b-ygmnus5is1]::-webkit-scrollbar-thumb {
     background: var(--colorAccent);
     border-radius: 25px;
 }
 
-.imageContainer {
+.imageContainer[b-ygmnus5is1] {
     justify-self: center;
     grid-column: 1;
     grid-row: 1/ span auto;
     padding: 10px;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     min-height: 30vh;
 }
 
-.skillImg {
+.imageContainer > h4[b-ygmnus5is1] {
+    font-size: 1em;
+    color: var(--colorSecondary);
+    opacity: 0.2;
+    text-align: center;
+    font-weight: 200;
+}
+
+.skillImg[b-ygmnus5is1] {
     width: 210px;
     height: 131px;
     max-width: 100%;
     aspect-ratio: 16 / 10;
 }
 
-.imgActive {
+.imgActive[b-ygmnus5is1] {
     animation: .3s slideFromRight forwards;
     -webkit-animation: .3s slideFromRight forwards;
     -moz-animation: .3s slideFromRight forwards;
     -o-animation: .3s slideFromRight forwards;
 }
 
-.imgInactive {
+.imgInactive[b-ygmnus5is1] {
     animation: .3s slideFromLeft reverse;
     -webkit-animation: .3s slideFromLeft reverse;
     -moz-animation: .3s slideFromLeft reverse;
     -o-animation: .3s slideFromLeft reverse;
 }
 
-.textContainer {
+.textContainer[b-ygmnus5is1] {
     grid-column: 1;
     grid-row: auto/ span auto;
     display: flex;
@@ -82,7 +91,7 @@
     flex-grow: 0;
 }
 
-.skillName {
+.skillName[b-ygmnus5is1] {
     text-transform: capitalize;
     color: var(--colorTertiary);
     border-bottom: var(--borderWidth) solid var(--colorAccent);
@@ -90,21 +99,21 @@
     font-weight: 600;
 }
 
-.skillDesc {
+.skillDesc[b-ygmnus5is1] {
     font-size: 1.1rem;
     line-height: 1.8rem;
 }
 
-.hidden {
+.hidden[b-ygmnus5is1] {
     display: none;
 }
 
-.bottomContainer {
+.bottomContainer[b-ygmnus5is1] {
     width: 95%;
     height: 40%;
     max-width: 800px;
     max-height: 800px;
-    padding: 20px 10px;
+    padding: 10px 10px;
     background: radial-gradient(farthest-corner ,#0008, #0007, #0009, #0007);
     display: grid;
     grid-gap: .5rem;
@@ -117,20 +126,20 @@
     overflow-y: scroll;
 }
 
-.bottomContainer::-webkit-scrollbar {
+.bottomContainer[b-ygmnus5is1]::-webkit-scrollbar {
     width: 5px; 
 }
 
-.bottomContainer::-webkit-scrollbar-track {
+.bottomContainer[b-ygmnus5is1]::-webkit-scrollbar-track {
     background-color: black;
 }
 
-.bottomContainer::-webkit-scrollbar-thumb {
+.bottomContainer[b-ygmnus5is1]::-webkit-scrollbar-thumb {
     background: var(--colorAccent);
     border-radius: 8px;
 }
 
-.skillIconWrapper {
+.skillIconWrapper[b-ygmnus5is1] {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,32 +149,32 @@
     border-top-right-radius: 8px;
 }
 
-.skillIconWrapper:hover {
+.skillIconWrapper:hover[b-ygmnus5is1] {
     transition: 0.5s background ease-in-out;
     background: radial-gradient(circle,#0004 50% ,transparent 150%);
     cursor: pointer;
 }
 
-.skillIconWrapper:focus {
+.skillIconWrapper:focus[b-ygmnus5is1] {
     border-color: var(--colorAccent);
 }
 
-.active {
+.active[b-ygmnus5is1] {
     transition: 0.4s border-color ease-in-out;
     border-color: var(--colorAccent);
     background: #0009;
 }
 
-.active > img {
+.active > img[b-ygmnus5is1] {
     transition: 0.4s transform ease-in-out;
     transform: scale(1.2);
 }
 
-.active:hover {
+.active:hover[b-ygmnus5is1] {
     background: #0009;
 }
 
-.skillIcon {
+.skillIcon[b-ygmnus5is1] {
     width: 35%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -175,7 +184,7 @@
 
 /* lightBox */
 
-.lightBox {
+.lightBox[b-ygmnus5is1] {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -187,15 +196,15 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
-.show {
+.show[b-ygmnus5is1] {
     display: flex;
 }
 
-.hide {
+.hide[b-ygmnus5is1] {
     display: none;
 }
 
-.content {
+.content[b-ygmnus5is1] {
     width: 80%;
     height: 80%;
     background: #fff;
@@ -207,49 +216,55 @@
     align-items: center;
 }
 
-.lightBoxImg {
+.lightBoxImg[b-ygmnus5is1] {
     max-width: 100%;
     max-height: 80vh;
     aspect-ratio: 16 / 10;
 }
 
-@media screen and (min-height: 1300px) {
-    .skillIcon {
+@media screen and (orientation: portrait) {
+    .bottomContainer[b-ygmnus5is1] {
+        border-top-left-radius: 24px;
+    }
+}
+
+@media screen and (min-height: 1500px) {
+    .skillIcon[b-ygmnus5is1] {
         width: 40%;
     }
 }
 
 @media screen and (max-height: 900px) {
-    .topContainer {
+    .topContainer[b-ygmnus5is1] {
         overflow-y: scroll;
     }
 
-    .topContainer::-webkit-scrollbar {
+    .topContainer[b-ygmnus5is1]::-webkit-scrollbar {
         width: 5px; 
     }
 
-    .topContainer::-webkit-scrollbar-track {
+    .topContainer[b-ygmnus5is1]::-webkit-scrollbar-track {
         background-color: black;
     }
 
-    .topContainer::-webkit-scrollbar-thumb {
+    .topContainer[b-ygmnus5is1]::-webkit-scrollbar-thumb {
         background: var(--colorAccent);
         border-radius: 25px;
     }
 
-    .bottomContainer {
+    .bottomContainer[b-ygmnus5is1] {
         overflow-y: scroll;
     }
 
-    .bottomContainer::-webkit-scrollbar {
+    .bottomContainer[b-ygmnus5is1]::-webkit-scrollbar {
         width: 5px; 
     }
     
-    .bottomContainer::-webkit-scrollbar-track {
+    .bottomContainer[b-ygmnus5is1]::-webkit-scrollbar-track {
         background-color: black;
     }
     
-    .bottomContainer::-webkit-scrollbar-thumb {
+    .bottomContainer[b-ygmnus5is1]::-webkit-scrollbar-thumb {
         background: var(--colorAccent);
         border-radius: 8px;
     }
@@ -258,38 +273,47 @@
 @media screen 
 and (min-width: 1100px) 
 and (orientation: portrait) {
-    .imageContainer {
+    .imageContainer[b-ygmnus5is1] {
         grid-column: 1/ span 5;
         grid-row: 1;
         align-self: center;
     }
-    .textContainer {
+    .textContainer[b-ygmnus5is1] {
         grid-column: auto / span 2;
         grid-row: 1;
         align-self: center;
         flex: 0 0 auto;
     }
-    .topContainer {
+    .topContainer[b-ygmnus5is1] {
         overflow: hidden;
     }
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 250px;
         height: 156px;
     }
 }
 
 @media screen
-and (min-width: 330px) {
-    .skillImg {
+and (min-width: 360px) {
+    .skillImg[b-ygmnus5is1] {
         width: 300px;
         height: 188px;
     }
 }
 
 @media screen
+and (max-height: 600px) {
+    .skillImg[b-ygmnus5is1] {
+        width: 250px;
+        height: 156px;
+    }
+}
+
+
+@media screen
 and (min-width: 600px)
 and (orientation: portrait) {
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 400px;
         height: 250px;
     }
@@ -299,7 +323,7 @@ and (orientation: portrait) {
 and (min-width: 950px)
 and (min-height: 550px)
 and (orientation: landscape) {
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 400px;
         height: 250px;
     }
@@ -309,7 +333,7 @@ and (orientation: landscape) {
 and (min-width: 1050px)
 and (min-height: 700px)
 and (orientation: landscape) {
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 500px;
         height: 313px;
     }
@@ -319,7 +343,7 @@ and (orientation: landscape) {
 and (min-width: 1450px)
 and (min-height: 800px)
 and (orientation: landscape) {
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 700px;
         height: 438px;
     }
@@ -328,23 +352,23 @@ and (orientation: landscape) {
 @media screen 
 and (max-width: 799px) 
 and (orientation: landscape) {
-    .pageContainer {
+    .pageContainer[b-ygmnus5is1] {
         flex-flow: row wrap; 
         -o-justify-content: center;
         justify-content: center;
     }
 
-    .topContainer {
+    .topContainer[b-ygmnus5is1] {
         width: 60%;
         height: 100%;
         min-height: fit-content;
     }
     
-    .skillIcon {
+    .skillIcon[b-ygmnus5is1] {
         width: 50%;
     }
     
-    .bottomContainer {
+    .bottomContainer[b-ygmnus5is1] {
         border: 0;
         width: 40%;
         padding: 5px;
@@ -358,22 +382,22 @@ and (orientation: landscape) {
 @media screen 
 and (min-width: 800px) 
 and (orientation: landscape) {
-    .pageContainer {
+    .pageContainer[b-ygmnus5is1] {
         flex-flow: row wrap;
         -o-justify-content: center;
         justify-content: center;
     }
 
-    .topContainer {
+    .topContainer[b-ygmnus5is1] {
         width: 60%;
         height: 100%;
     }
     
-    .textContainer {
+    .textContainer[b-ygmnus5is1] {
         padding: 20px;
     }
     
-    .bottomContainer {
+    .bottomContainer[b-ygmnus5is1] {
         border: 0;
         width: 40%;
         padding: 5px;
@@ -385,10 +409,10 @@ and (orientation: landscape) {
 @media screen 
 and (max-width: 700px) 
 and (orientation: portrait) {
-    .skillIcon {
+    .skillIcon[b-ygmnus5is1] {
         width: 50%;
     }
-    .lightBox {
+    .lightBox[b-ygmnus5is1] {
         padding-bottom: 3.5rem;
     }
 }
@@ -396,7 +420,7 @@ and (orientation: portrait) {
 @media screen
 and (max-width: 800px) 
 and (min-height: 500px) {
-    .lightBox {
+    .lightBox[b-ygmnus5is1] {
         padding-bottom: 3.5rem;
     }
 }
@@ -404,7 +428,7 @@ and (min-height: 500px) {
 @media screen 
 and (min-width: 1700px)
 and (orientation: landscape) {
-    .bottomContainer {
+    .bottomContainer[b-ygmnus5is1] {
         grid-template-columns: repeat(5, 1fr);
         border: 0;
     }
@@ -413,16 +437,16 @@ and (orientation: landscape) {
 @media screen
 and (max-height: 450px)
 and (min-width: 1300px) {
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 250px;
         height: 156px;
     }
-    .imageContainer {
+    .imageContainer[b-ygmnus5is1] {
         grid-column: 1/ span 5;
         grid-row: 1;
         align-self: center;
     }
-    .textContainer {
+    .textContainer[b-ygmnus5is1] {
         grid-column: auto / span 2;
         grid-row: 1;
         align-self: center;
@@ -433,11 +457,11 @@ and (min-width: 1300px) {
 @media screen
 and (max-height: 450px)
 and (max-width: 1300px) {
-    .imageContainer {
+    .imageContainer[b-ygmnus5is1] {
         min-height: 200px;
     }
 
-    .skillImg {
+    .skillImg[b-ygmnus5is1] {
         width: 200px;
         height: 125px;
     }

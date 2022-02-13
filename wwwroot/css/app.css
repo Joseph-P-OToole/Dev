@@ -21,9 +21,14 @@
 
 html, body {
     min-height: fit-content;
-    font-family: Overpass, sans-serif;
-    height: 100vh;
+    font-family: 'Spartan', sans-serif;
     background-color: #000;
+}
+
+body {
+    height: 100vh;
+    -o-height: 99vh;
+    margin: auto;
 }
 
 .content, article {
@@ -81,10 +86,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #loadingText {
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--colorAccent);
     margin-top: 1rem;
+    text-align: center;
 }
 
 .oi {

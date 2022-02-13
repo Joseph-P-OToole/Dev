@@ -55,12 +55,11 @@
     font-size: 1.1rem;
 }
 
-
-
 .nav-item {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     text-transform: lowercase;
+    font-weight: 500;
 }
 
     .nav-item:first-of-type {

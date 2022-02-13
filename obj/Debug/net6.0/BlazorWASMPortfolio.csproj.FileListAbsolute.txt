@@ -814,8 +814,8 @@ C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\Blazo
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\ref\BlazorWASMPortfolio.dll
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\BlazorWASMPortfolio.pdb
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css
-C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Skills.razor.rz.scp.css
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\About.razor.rz.scp.css
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\package-lock.json
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\package.json
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Contact.razor.rz.scp.css
+C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Samples.razor.rz.scp.css

@@ -1,12 +1,12 @@
 
-.pageContainer[b-4vqho6uctf] {
+.pageContainer {
     max-width: 1800px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
-.topContainer[b-4vqho6uctf] {
+.topContainer {
     width: 95%;
     height: 60%;
     grid-row: 3/7;
@@ -21,57 +21,66 @@
     overflow-x: hidden;
 }
 
-.topContainer[b-4vqho6uctf] {
+.topContainer {
     overflow-y: scroll;
 }
 
-.topContainer[b-4vqho6uctf]::-webkit-scrollbar {
+.topContainer::-webkit-scrollbar {
     width: 5px; 
 }
 
-.topContainer[b-4vqho6uctf]::-webkit-scrollbar-track {
+.topContainer::-webkit-scrollbar-track {
     background-color: black;
 }
 
-.topContainer[b-4vqho6uctf]::-webkit-scrollbar-thumb {
+.topContainer::-webkit-scrollbar-thumb {
     background: var(--colorAccent);
     border-radius: 25px;
 }
 
-.imageContainer[b-4vqho6uctf] {
+.imageContainer {
     justify-self: center;
     grid-column: 1;
     grid-row: 1/ span auto;
     padding: 10px;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     min-height: 30vh;
 }
 
-.skillImg[b-4vqho6uctf] {
+.imageContainer > h4 {
+    font-size: 1em;
+    color: var(--colorSecondary);
+    opacity: 0.2;
+    text-align: center;
+    font-weight: 200;
+}
+
+.skillImg {
     width: 210px;
     height: 131px;
     max-width: 100%;
     aspect-ratio: 16 / 10;
 }
 
-.imgActive[b-4vqho6uctf] {
+.imgActive {
     animation: .3s slideFromRight forwards;
     -webkit-animation: .3s slideFromRight forwards;
     -moz-animation: .3s slideFromRight forwards;
     -o-animation: .3s slideFromRight forwards;
 }
 
-.imgInactive[b-4vqho6uctf] {
+.imgInactive {
     animation: .3s slideFromLeft reverse;
     -webkit-animation: .3s slideFromLeft reverse;
     -moz-animation: .3s slideFromLeft reverse;
     -o-animation: .3s slideFromLeft reverse;
 }
 
-.textContainer[b-4vqho6uctf] {
+.textContainer {
     grid-column: 1;
     grid-row: auto/ span auto;
     display: flex;
@@ -82,7 +91,7 @@
     flex-grow: 0;
 }
 
-.skillName[b-4vqho6uctf] {
+.skillName {
     text-transform: capitalize;
     color: var(--colorTertiary);
     border-bottom: var(--borderWidth) solid var(--colorAccent);
@@ -90,21 +99,21 @@
     font-weight: 600;
 }
 
-.skillDesc[b-4vqho6uctf] {
+.skillDesc {
     font-size: 1.1rem;
     line-height: 1.8rem;
 }
 
-.hidden[b-4vqho6uctf] {
+.hidden {
     display: none;
 }
 
-.bottomContainer[b-4vqho6uctf] {
+.bottomContainer {
     width: 95%;
     height: 40%;
     max-width: 800px;
     max-height: 800px;
-    padding: 20px 10px;
+    padding: 10px 10px;
     background: radial-gradient(farthest-corner ,#0008, #0007, #0009, #0007);
     display: grid;
     grid-gap: .5rem;
@@ -117,20 +126,20 @@
     overflow-y: scroll;
 }
 
-.bottomContainer[b-4vqho6uctf]::-webkit-scrollbar {
+.bottomContainer::-webkit-scrollbar {
     width: 5px; 
 }
 
-.bottomContainer[b-4vqho6uctf]::-webkit-scrollbar-track {
+.bottomContainer::-webkit-scrollbar-track {
     background-color: black;
 }
 
-.bottomContainer[b-4vqho6uctf]::-webkit-scrollbar-thumb {
+.bottomContainer::-webkit-scrollbar-thumb {
     background: var(--colorAccent);
     border-radius: 8px;
 }
 
-.skillIconWrapper[b-4vqho6uctf] {
+.skillIconWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,32 +149,32 @@
     border-top-right-radius: 8px;
 }
 
-.skillIconWrapper:hover[b-4vqho6uctf] {
+.skillIconWrapper:hover {
     transition: 0.5s background ease-in-out;
     background: radial-gradient(circle,#0004 50% ,transparent 150%);
     cursor: pointer;
 }
 
-.skillIconWrapper:focus[b-4vqho6uctf] {
+.skillIconWrapper:focus {
     border-color: var(--colorAccent);
 }
 
-.active[b-4vqho6uctf] {
+.active {
     transition: 0.4s border-color ease-in-out;
     border-color: var(--colorAccent);
     background: #0009;
 }
 
-.active > img[b-4vqho6uctf] {
+.active > img {
     transition: 0.4s transform ease-in-out;
     transform: scale(1.2);
 }
 
-.active:hover[b-4vqho6uctf] {
+.active:hover {
     background: #0009;
 }
 
-.skillIcon[b-4vqho6uctf] {
+.skillIcon {
     width: 35%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -175,7 +184,7 @@
 
 /* lightBox */
 
-.lightBox[b-4vqho6uctf] {
+.lightBox {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -187,15 +196,15 @@
     background: rgba(0, 0, 0, 0.8);
 }
 
-.show[b-4vqho6uctf] {
+.show {
     display: flex;
 }
 
-.hide[b-4vqho6uctf] {
+.hide {
     display: none;
 }
 
-.content[b-4vqho6uctf] {
+.content {
     width: 80%;
     height: 80%;
     background: #fff;
@@ -207,49 +216,55 @@
     align-items: center;
 }
 
-.lightBoxImg[b-4vqho6uctf] {
+.lightBoxImg {
     max-width: 100%;
     max-height: 80vh;
     aspect-ratio: 16 / 10;
 }
 
-@media screen and (min-height: 1300px) {
-    .skillIcon[b-4vqho6uctf] {
+@media screen and (orientation: portrait) {
+    .bottomContainer {
+        border-top-left-radius: 24px;
+    }
+}
+
+@media screen and (min-height: 1500px) {
+    .skillIcon {
         width: 40%;
     }
 }
 
 @media screen and (max-height: 900px) {
-    .topContainer[b-4vqho6uctf] {
+    .topContainer {
         overflow-y: scroll;
     }
 
-    .topContainer[b-4vqho6uctf]::-webkit-scrollbar {
+    .topContainer::-webkit-scrollbar {
         width: 5px; 
     }
 
-    .topContainer[b-4vqho6uctf]::-webkit-scrollbar-track {
+    .topContainer::-webkit-scrollbar-track {
         background-color: black;
     }
 
-    .topContainer[b-4vqho6uctf]::-webkit-scrollbar-thumb {
+    .topContainer::-webkit-scrollbar-thumb {
         background: var(--colorAccent);
         border-radius: 25px;
     }
 
-    .bottomContainer[b-4vqho6uctf] {
+    .bottomContainer {
         overflow-y: scroll;
     }
 
-    .bottomContainer[b-4vqho6uctf]::-webkit-scrollbar {
+    .bottomContainer::-webkit-scrollbar {
         width: 5px; 
     }
     
-    .bottomContainer[b-4vqho6uctf]::-webkit-scrollbar-track {
+    .bottomContainer::-webkit-scrollbar-track {
         background-color: black;
     }
     
-    .bottomContainer[b-4vqho6uctf]::-webkit-scrollbar-thumb {
+    .bottomContainer::-webkit-scrollbar-thumb {
         background: var(--colorAccent);
         border-radius: 8px;
     }
@@ -258,38 +273,47 @@
 @media screen 
 and (min-width: 1100px) 
 and (orientation: portrait) {
-    .imageContainer[b-4vqho6uctf] {
+    .imageContainer {
         grid-column: 1/ span 5;
         grid-row: 1;
         align-self: center;
     }
-    .textContainer[b-4vqho6uctf] {
+    .textContainer {
         grid-column: auto / span 2;
         grid-row: 1;
         align-self: center;
         flex: 0 0 auto;
     }
-    .topContainer[b-4vqho6uctf] {
+    .topContainer {
         overflow: hidden;
     }
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 250px;
         height: 156px;
     }
 }
 
 @media screen
-and (min-width: 330px) {
-    .skillImg[b-4vqho6uctf] {
+and (min-width: 360px) {
+    .skillImg {
         width: 300px;
         height: 188px;
     }
 }
 
 @media screen
+and (max-height: 600px) {
+    .skillImg {
+        width: 250px;
+        height: 156px;
+    }
+}
+
+
+@media screen
 and (min-width: 600px)
 and (orientation: portrait) {
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 400px;
         height: 250px;
     }
@@ -299,7 +323,7 @@ and (orientation: portrait) {
 and (min-width: 950px)
 and (min-height: 550px)
 and (orientation: landscape) {
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 400px;
         height: 250px;
     }
@@ -309,7 +333,7 @@ and (orientation: landscape) {
 and (min-width: 1050px)
 and (min-height: 700px)
 and (orientation: landscape) {
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 500px;
         height: 313px;
     }
@@ -319,7 +343,7 @@ and (orientation: landscape) {
 and (min-width: 1450px)
 and (min-height: 800px)
 and (orientation: landscape) {
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 700px;
         height: 438px;
     }
@@ -328,23 +352,23 @@ and (orientation: landscape) {
 @media screen 
 and (max-width: 799px) 
 and (orientation: landscape) {
-    .pageContainer[b-4vqho6uctf] {
+    .pageContainer {
         flex-flow: row wrap; 
         -o-justify-content: center;
         justify-content: center;
     }
 
-    .topContainer[b-4vqho6uctf] {
+    .topContainer {
         width: 60%;
         height: 100%;
         min-height: fit-content;
     }
     
-    .skillIcon[b-4vqho6uctf] {
+    .skillIcon {
         width: 50%;
     }
     
-    .bottomContainer[b-4vqho6uctf] {
+    .bottomContainer {
         border: 0;
         width: 40%;
         padding: 5px;
@@ -358,22 +382,22 @@ and (orientation: landscape) {
 @media screen 
 and (min-width: 800px) 
 and (orientation: landscape) {
-    .pageContainer[b-4vqho6uctf] {
+    .pageContainer {
         flex-flow: row wrap;
         -o-justify-content: center;
         justify-content: center;
     }
 
-    .topContainer[b-4vqho6uctf] {
+    .topContainer {
         width: 60%;
         height: 100%;
     }
     
-    .textContainer[b-4vqho6uctf] {
+    .textContainer {
         padding: 20px;
     }
     
-    .bottomContainer[b-4vqho6uctf] {
+    .bottomContainer {
         border: 0;
         width: 40%;
         padding: 5px;
@@ -385,10 +409,10 @@ and (orientation: landscape) {
 @media screen 
 and (max-width: 700px) 
 and (orientation: portrait) {
-    .skillIcon[b-4vqho6uctf] {
+    .skillIcon {
         width: 50%;
     }
-    .lightBox[b-4vqho6uctf] {
+    .lightBox {
         padding-bottom: 3.5rem;
     }
 }
@@ -396,7 +420,7 @@ and (orientation: portrait) {
 @media screen
 and (max-width: 800px) 
 and (min-height: 500px) {
-    .lightBox[b-4vqho6uctf] {
+    .lightBox {
         padding-bottom: 3.5rem;
     }
 }
@@ -404,7 +428,7 @@ and (min-height: 500px) {
 @media screen 
 and (min-width: 1700px)
 and (orientation: landscape) {
-    .bottomContainer[b-4vqho6uctf] {
+    .bottomContainer {
         grid-template-columns: repeat(5, 1fr);
         border: 0;
     }
@@ -413,16 +437,16 @@ and (orientation: landscape) {
 @media screen
 and (max-height: 450px)
 and (min-width: 1300px) {
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 250px;
         height: 156px;
     }
-    .imageContainer[b-4vqho6uctf] {
+    .imageContainer {
         grid-column: 1/ span 5;
         grid-row: 1;
         align-self: center;
     }
-    .textContainer[b-4vqho6uctf] {
+    .textContainer {
         grid-column: auto / span 2;
         grid-row: 1;
         align-self: center;
@@ -433,11 +457,11 @@ and (min-width: 1300px) {
 @media screen
 and (max-height: 450px)
 and (max-width: 1300px) {
-    .imageContainer[b-4vqho6uctf] {
+    .imageContainer {
         min-height: 200px;
     }
 
-    .skillImg[b-4vqho6uctf] {
+    .skillImg {
         width: 200px;
         height: 125px;
     }
