@@ -71,6 +71,22 @@ body::-webkit-scrollbar-thumb {
     padding: 50px 1%;
 }
 
+#loadingLogo::before {
+    opacity: 0;
+}
+
+#loadingLogo {
+    height: 30%;
+    max-height: 300px;
+}
+
+#loadingText {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--colorAccent);
+    margin-top: 1rem;
+}
+
 .oi {
     width: 2rem;
     font-size: 1.5rem;

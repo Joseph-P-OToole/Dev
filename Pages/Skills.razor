@@ -64,7 +64,7 @@
 
     private async Task SetGallery(int idx) {
         if(idx != -1) {
-            if(firstLoad) {
+            if(firstLoad == false) {
                 imgBoxClassName = "imgInactive";
                 textBoxClassName = "textInactive";
                 await Task.Delay(200);
@@ -75,7 +75,7 @@
             galleryTitle = SkillData.skillNames[idx];
             galleryImage = SkillData.skillImages[idx];
             galleryLink = SkillData.skillLinks[idx];
-            if(firstLoad) {
+            if(firstLoad == false) {
                 imgBoxClassName = "imgActive";
                 textBoxClassName = "textActive";
             }
@@ -86,12 +86,11 @@
         }
     }// SetGallery
 
-    protected override async Task OnAfterRenderAsync(bool firstRender) {
-        if(firstRender) {
+    protected override async Task OnInitializedAsync() {
             await SetGallery(0);
             StateHasChanged();
-        }
-    }// OnAfterRenderAsync
+            firstLoad = false;
+    }// OnInitializedAsync
 
     private void lightBoxSetClassName() {
         if(contentSet) {
