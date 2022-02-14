@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/1f6aqs0y0K9lUkkA6fxre7cxQZP0Cjeyi/6wnze89c=",
+  "Hash": "Sp3+gCFX8fF1Q38B8uAxupLfCM75dPWuuQsSCxfHbCw=",
   "Source": "BlazorWASMPortfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -6851,12 +6851,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\bkg\\contactBkg.jpg"
     },
     {
-      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\skillBkg2.jpg",
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\hireBkg.jpg",
       "SourceId": "BlazorWASMPortfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "assets/bkg/skillBkg2.jpg",
+      "RelativePath": "assets/bkg/hireBkg.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6865,7 +6865,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\bkg\\skillBkg2.jpg"
+      "OriginalItemSpec": "wwwroot\\assets\\bkg\\hireBkg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\bkg\\skillBkg.jpg",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/bkg/skillBkg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\bkg\\skillBkg.jpg"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\icons\\Indeed.png",
@@ -6953,12 +6970,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\icons\\tile_background (3).png"
     },
     {
-      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\logos\\Asset 7.svg",
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\logos\\Asset 15.svg",
       "SourceId": "BlazorWASMPortfolio",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "assets/logos/Asset 7.svg",
+      "RelativePath": "assets/logos/Asset 15.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -6967,7 +6984,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\logos\\Asset 7.svg"
+      "OriginalItemSpec": "wwwroot\\assets\\logos\\Asset 15.svg"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\logos\\JOE_2.svg",

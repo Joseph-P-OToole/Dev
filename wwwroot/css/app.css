@@ -21,7 +21,7 @@
 
 html, body {
     min-height: fit-content;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Overpass', sans-serif;
     background-color: #000;
 }
 
@@ -107,6 +107,36 @@ h1:focus {
 
 a, .btn-link {
     color: var(--colorTertiary);
+}
+
+.pageLink {
+    color: var(--colorAccent);
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    cursor: pointer;
+    text-transform: lowercase;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+.pageLink:hover {
+    color: var(--colorTertiary);
+    text-shadow: 0px 0px 10px var(--colorTertiary);
+}
+
+.pageLink::selection {
+    color: var(--colorAccent);
+}
+
+.pageLink::shadow {
+    color: var(--colorAccent);
+}
+
+.pageLink:active {
+    color: var(--colorAccent);
 }
 
 .accentText {
@@ -203,7 +233,7 @@ a, .btn-link {
 
 @media screen and (min-width: 900px) {
     html {
-        font-size: 1em;
+        font-size: .9em;
     }
 }
     /* Animation */

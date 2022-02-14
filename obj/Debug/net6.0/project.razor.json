@@ -8,101 +8,329 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 472081826,
+        "HashCode": -1513456939,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_d9c8cbfd84d225107765408a7ccc190d7241da24",
+        "Name": "BlazorWASMPortfolio.App",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_d9c8cbfd84d225107765408a7ccc190d7241da24"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_d9c8cbfd84d225107765408a7ccc190d7241da24"
+          "Common.TypeName": "BlazorWASMPortfolio.App"
         }
       },
       {
-        "HashCode": -763212662,
+        "HashCode": 1138599083,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_d9c8cbfd84d225107765408a7ccc190d7241da24",
+        "Name": "BlazorWASMPortfolio.App",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_d9c8cbfd84d225107765408a7ccc190d7241da24"
+            "TagName": "BlazorWASMPortfolio.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_d9c8cbfd84d225107765408a7ccc190d7241da24",
+          "Common.TypeName": "BlazorWASMPortfolio.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1355172157,
+        "HashCode": -2018376967,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_677fea665bff10d1846b739e73745fd608241ccb",
+        "Name": "BlazorWASMPortfolio.Pages.About",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_677fea665bff10d1846b739e73745fd608241ccb"
+            "TagName": "About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_677fea665bff10d1846b739e73745fd608241ccb"
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.About"
         }
       },
       {
-        "HashCode": 2117628549,
+        "HashCode": -2001085821,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_677fea665bff10d1846b739e73745fd608241ccb",
+        "Name": "BlazorWASMPortfolio.Pages.About",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_677fea665bff10d1846b739e73745fd608241ccb"
+            "TagName": "BlazorWASMPortfolio.Pages.About"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_677fea665bff10d1846b739e73745fd608241ccb",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.About",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1050065889,
+        "HashCode": 890488435,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_dbe20eeb2b57ce098c80b71ee3f46a85b71ee3e1",
+        "Name": "BlazorWASMPortfolio.Pages.Contact",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_dbe20eeb2b57ce098c80b71ee3f46a85b71ee3e1"
+            "TagName": "Contact"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_dbe20eeb2b57ce098c80b71ee3f46a85b71ee3e1"
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Contact"
         }
       },
       {
-        "HashCode": 1770527453,
+        "HashCode": -1128239227,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_dbe20eeb2b57ce098c80b71ee3f46a85b71ee3e1",
+        "Name": "BlazorWASMPortfolio.Pages.Contact",
         "AssemblyName": "BlazorWASMPortfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_dbe20eeb2b57ce098c80b71ee3f46a85b71ee3e1"
+            "TagName": "BlazorWASMPortfolio.Pages.Contact"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_dbe20eeb2b57ce098c80b71ee3f46a85b71ee3e1",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Contact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2047993225,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Index",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -752518809,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Index",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1486187548,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Samples",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Samples"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Samples"
+        }
+      },
+      {
+        "HashCode": 233493510,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Samples",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Pages.Samples"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Samples",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 609388612,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Hire",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Hire"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Hire"
+        }
+      },
+      {
+        "HashCode": 99755687,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Hire",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Pages.Hire"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Hire",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1539528671,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Shared.MainLayout",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": 1619631069,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Shared.MainLayout",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1110507165,
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorWASMPortfolio.Shared.MainLayout.Body",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 795383378,
+        "Kind": "Components.ChildContent",
+        "Name": "BlazorWASMPortfolio.Shared.MainLayout.Body",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "BlazorWASMPortfolio.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1894604920,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Shared.NavMenu",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -548410536,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Shared.NavMenu",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13422,6 +13650,52 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "BlazorWASMPortfolio",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Pages\\Samples.razor",
+      "TargetPath": "Pages\\Samples.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Pages\\About.razor",
+      "TargetPath": "Pages\\About.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Pages\\Hire.razor",
+      "TargetPath": "Pages\\Hire.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Pages\\Contact.razor",
+      "TargetPath": "Pages\\Contact.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

@@ -47,16 +47,15 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    min-height: 30vh;
+    min-height: calc(fit-content + 1rem);
 }
 
 .imageContainer > h4[b-ygmnus5is1] {
     font-size: 1em;
-    color: var(--colorSecondary);
-    opacity: 0.2;
+    color: var(--colorPrimary);
+    opacity: 0.85;
     text-align: center;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .skillImg[b-ygmnus5is1] {
@@ -64,6 +63,11 @@
     height: 131px;
     max-width: 100%;
     aspect-ratio: 16 / 10;
+}
+
+.skillImg:hover[b-ygmnus5is1] {
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .imgActive[b-ygmnus5is1] {
@@ -106,6 +110,17 @@
 
 .hidden[b-ygmnus5is1] {
     display: none;
+}
+
+.skillLink[b-ygmnus5is1] {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.pageLink[b-ygmnus5is1], .nav-link[b-ygmnus5is1] {
+    flex-flow: row nowrap;
+    grid-row: unset;
+    justify-content: center;
 }
 
 .bottomContainer[b-ygmnus5is1] {
@@ -212,7 +227,7 @@
     box-shadow: 0px 0px 4px #000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -222,9 +237,27 @@
     aspect-ratio: 16 / 10;
 }
 
+.lightBoxText[b-ygmnus5is1] {
+    color: var(--textPrimary);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.lightBoxText:hover[b-ygmnus5is1] {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 @media screen and (orientation: portrait) {
     .bottomContainer[b-ygmnus5is1] {
         border-top-left-radius: 24px;
+    }
+}
+
+@media screen 
+and (max-width: 800px) {
+    .lightBox[b-ygmnus5is1] {
+        padding-top: 3.5rem;
     }
 }
 

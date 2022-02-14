@@ -15,16 +15,17 @@
                 @galleryTitle
             </h4>
             <p class="skillDesc">
-                @galleryDescription
+                @galleryDescription <br />
+                @if(galleryLink != "")
+                {
+                    <a class="skillLink" href=@($"{ @galleryLink }") title=@($"{ @galleryLink }") target="_blank">
+                        check it out&nbsp;<span class="oi oi-arrow-thick-right"></span>
+                    </a>
+                }
             </p>
-            @if(galleryLink != "")
-            {
-                <a class="skillLink" href=@($"{ @galleryLink }") target="_blank">
-                    @galleryLink
-                    <span class="oi oi-hand"></span>
-                </a>
-            }
         </div>
+        <a class="nav-link pageLink disableSelect slideFromLeft" href="Hire" Match="NavLinkMatch.All">Hire<span class="oi oi-account-login" aria-hidden="true"></span>
+        </a>
     </div>
     <div class="bottomContainer">
         @for(int i = 0; i < SkillData.skillIcons.Count(); i++) {
@@ -37,8 +38,11 @@
 </div>
 <div @onclick="() => ClearContent()" class=@($"lightBox { lightBoxClassName }")>
     <div class="contentContainer">
-        @if(contentSet) {
+        @if(lightBoxSet) {
             <img class="lightBoxImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
+            <h4 class="lightBoxText disableSelect">
+                click anywhere to close
+            </h4>
         }
     </div>
 </div>
@@ -49,8 +53,7 @@
     string galleryImage = "";
     string galleryLink = "";
     int selectedIdx = -1;
-    int lastIdx = -1;
-    bool contentSet = false;
+    bool lightBoxSet = false;
     string imgBoxClassName = "";
     string textBoxClassName = "";
     string lightBoxClassName = "hide";
@@ -65,7 +68,7 @@
     }// getState
 
     private async Task SetGallery(int idx) {
-        if(idx != -1) {
+        if(idx != -1 && idx != selectedIdx) {
             if(firstLoad == false) {
                 imgBoxClassName = "imgInactive";
                 textBoxClassName = "textInactive";
@@ -95,7 +98,7 @@
     }// OnInitializedAsync
 
     private void lightBoxSetClassName() {
-        if(contentSet) {
+        if(lightBoxSet) {
             lightBoxClassName = "show fadeIn";
         }else {
             lightBoxClassName = "show fadeOut";
@@ -106,13 +109,13 @@
     }// lightBoxCetClassName
 
     public async void SetLightBox() {
-        contentSet = true;
+        lightBoxSet = true;
         lightBoxSetClassName();
         await Task.Delay(1);
     }// SetLightBox
 
     public void ClearContent() {
-        contentSet = false;
+        lightBoxSet = false;
         lightBoxSetClassName();
         StateHasChanged();
     }// ClearContent

@@ -47,16 +47,15 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    min-height: 30vh;
+    min-height: calc(fit-content + 1rem);
 }
 
 .imageContainer > h4 {
     font-size: 1em;
-    color: var(--colorSecondary);
-    opacity: 0.2;
+    color: var(--colorPrimary);
+    opacity: 0.85;
     text-align: center;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .skillImg {
@@ -64,6 +63,11 @@
     height: 131px;
     max-width: 100%;
     aspect-ratio: 16 / 10;
+}
+
+.skillImg:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .imgActive {
@@ -106,6 +110,17 @@
 
 .hidden {
     display: none;
+}
+
+.skillLink {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.pageLink, .nav-link {
+    flex-flow: row nowrap;
+    grid-row: unset;
+    justify-content: center;
 }
 
 .bottomContainer {
@@ -212,7 +227,7 @@
     box-shadow: 0px 0px 4px #000;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -222,9 +237,27 @@
     aspect-ratio: 16 / 10;
 }
 
+.lightBoxText {
+    color: var(--textPrimary);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.lightBoxText:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 @media screen and (orientation: portrait) {
     .bottomContainer {
         border-top-left-radius: 24px;
+    }
+}
+
+@media screen 
+and (max-width: 800px) {
+    .lightBox {
+        padding-top: 3.5rem;
     }
 }
 

@@ -819,3 +819,4 @@ C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\packa
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\bin\Debug\net6.0\package.json
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Contact.razor.rz.scp.css
 C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Samples.razor.rz.scp.css
+C:\Users\otool\Documents\TriOS\Blazor\BlazorWASMPortfolio\obj\Debug\net6.0\scopedcss\Pages\Hire.razor.rz.scp.css
