@@ -28,11 +28,13 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    -o-align-items: end;
     justify-content: center;
     z-index: 1;
 }
 
 .lowerAccent > svg {
+    width: 100%;
     max-height: 60vh;
 }
 
