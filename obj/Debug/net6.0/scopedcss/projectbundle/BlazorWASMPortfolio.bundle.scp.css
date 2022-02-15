@@ -268,7 +268,8 @@ h1[b-ef8rk3pjgd] {
     min-height: 100vh;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
+    padding: 5%;
+    padding-bottom: 0;
     background: #0005;
 }
 
@@ -313,9 +314,10 @@ h1[b-ef8rk3pjgd] {
     color: var(--textPrimary);
     padding: 0 10px;
     flex-grow: 0;
-    background: #000;
+    background: #0009;
+    border: 1px solid #000;
     margin-top: 2px;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 h4[b-00m35mphvn] {
@@ -323,14 +325,16 @@ h4[b-00m35mphvn] {
     width: 100%;
     text-transform: capitalize;
     color: var(--colorTertiary);
-    border-bottom: var(--borderWidth) solid var(--colorAccent);
-    line-height: 1.2rem;
+    line-height: 1.8rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .textContainer > p[b-00m35mphvn] {
     font-size: 1.1rem;
     line-height: 1.8rem;
+    word-break: break-word;
+    text-align: center;
 }
 
 .lowerAccent[b-00m35mphvn] {
