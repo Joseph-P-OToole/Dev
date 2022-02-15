@@ -264,6 +264,7 @@ a, .btn-link {
     .slideFromRight::before {
         transform: translateX(200%);
         -webkit-transform: -webkit-translateX(200%);
+        -o-transform: -o-translateX(200%);
     }
 
     .slideFromRight {

@@ -41,6 +41,7 @@ h1 {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
+    background-attachment: fixed;
     transform: rotate(180deg);
     opacity: .9;
 }
@@ -54,6 +55,7 @@ h1 {
     background-size: cover;
     background-repeat: repeat;
     background-position: bottom;
+    background-attachment: fixed;
     opacity: .9;
 }
 
