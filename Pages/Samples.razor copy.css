@@ -10,7 +10,7 @@
     width: 95%;
     height: 60%;
     grid-row: 3/7;
-    padding: 20px 5px;
+    padding: 20px 0;
     max-height: 800px;
     max-width: 800px;
     background: var(--accentColor);
@@ -50,11 +50,12 @@
     min-height: calc(fit-content + 1rem);
 }
 
-.skillLabel {
-    color: var(--textPrimary);
-    opacity: 0.4;
+.imageContainer > h4 {
+    font-size: 1em;
+    color: var(--colorPrimary);
+    opacity: 0.85;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .skillImg {
@@ -85,16 +86,13 @@
 
 .textContainer {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: auto/ span auto;
     display: flex;
     flex-flow: column nowrap;
     height: fit-content;
     color: var(--textPrimary);
     padding: 10px;
     flex-grow: 0;
-    background: #0008;
-    border: var(--borderWidth) solid #000;
-    border-radius: 4px;
 }
 
 .skillName {
@@ -110,22 +108,6 @@
     line-height: 1.8rem;
 }
 
-.toggleButton {
-    display: flex;
-}
-
-.expandText {
-    color: var(--colorTertiary);
-    font-size: 1.2em;
-    font-weight: 100;
-}
-
-.expandText:hover {
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    color: var(--colorAccent);
-}
-
 .hidden {
     display: none;
 }
@@ -135,14 +117,11 @@
     font-size: 1.1rem;
 }
 
-.linkContainer {
-    width: 100%;
-    display: flex;
+.pageLink, .nav-link {
     flex-flow: row nowrap;
-    grid-row: 3;
+    grid-row: unset;
     justify-content: center;
     justify-self: center;
-    flex-shrink: 0;
 }
 
 .bottomContainer {
@@ -151,7 +130,7 @@
     max-width: 800px;
     max-height: 800px;
     padding: 10px 10px;
-    background: #0008;
+    background: radial-gradient(farthest-corner ,#0008, #0007, #0009, #0007);
     display: grid;
     grid-gap: .5rem;
     grid-template-columns: repeat(5, 1fr);
@@ -161,7 +140,6 @@
     -moz-animation: slideFromRight 0.5s ease-in-out;
     -o-animation: slideFromRight 0.5s ease-in-out;
     overflow-y: scroll;
-    align-items: center;
 }
 
 .bottomContainer::-webkit-scrollbar {
@@ -264,7 +242,6 @@
     color: var(--textPrimary);
     opacity: 0.4;
     text-align: center;
-    font-weight: 100;
 }
 
 .lightBoxText:hover {
@@ -275,8 +252,6 @@
 @media screen and (orientation: portrait) {
     .bottomContainer {
         border-top-left-radius: 24px;
-        margin-top: 5px;
-        height: calc(40% - 5px);
     }
 }
 

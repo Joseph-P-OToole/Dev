@@ -13,6 +13,7 @@ h1[b-ef8rk3pjgd] {
 
 .iconWrapper[b-ef8rk3pjgd] {
     width: 80%;
+    max-width: 900px;
     height: auto;
     display: flex;
     flex-direction: row wrap;

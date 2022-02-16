@@ -7,25 +7,42 @@
         <div @onclick="() => SetLightBox()" class=@($"imageContainer disableSelect { imgBoxClassName }")>
             @if(galleryImage != "") {
                 <img class="skillImg" src=@($"assets/screenshots/{ @galleryImage }.png") alt=@($"{ @galleryImage }") />
-                <h4>click to expand</h4>
+                <span class="skillLabel">click to expand</span>
             }
         </div>
         <div class=@($"textContainer { imgBoxClassName }") >
             <h4 class="skillName">
                 @galleryTitle
             </h4>
-            <p class="skillDesc">
-                @galleryDescription <br />
-                @if(galleryLink != "")
-                {
-                    <a class="skillLink" href=@($"{ @galleryLink }") title=@($"{ @galleryLink }") target="_blank">
-                        check it out&nbsp;<span class="oi oi-arrow-thick-right"></span>
-                    </a>
-                }
-            </p>
+            @if(textExpanded) {
+                <p class="skillDesc">
+                    <span class="fullDesc grow">
+                        @galleryDescription
+                    </span>
+                    @if(galleryLink != "")
+                    {
+                        <a class="skillLink disableSelect" href=@($"{ @galleryLink }") title=@($"{ @galleryLink }") target="_blank">
+                            &nbsp;check it out&nbsp;<span class="oi oi-arrow-thick-right"></span>
+                        </a>
+                    }
+                </p>
+                    <div @onclick= "ToggleDesc" class="toggleButton">
+                        <span class="expandText disableSelect">less</span>
+                    </div>
+            }else {
+                <p class="skillDesc">
+                    <span class="shortDesc">
+                        @shortDescription
+                    </span>
+                </p>
+                    <div @onclick= "ToggleDesc" class="toggleButton">
+                        <span class="expandText disableSelect">more</span>
+                    </div>
+            }
         </div>
-        <a class="nav-link pageLink disableSelect slideFromLeft" href="Hire" Match="NavLinkMatch.All">Hire<span class="oi oi-account-login" aria-hidden="true"></span>
-        </a>
+        <div class="linkContainer">
+            <a class="nav-link pageLink disableSelect slideFromLeft" href="Hire" Match="NavLinkMatch.All">Hire<span class="oi oi-account-login" aria-hidden="true"></span></a>
+        </div>
     </div>
     <div class="bottomContainer">
         @for(int i = 0; i < SkillData.skillIcons.Count(); i++) {
@@ -49,10 +66,13 @@
 
 @code {
     string galleryDescription = "";
+    string shortDescription = "";
+    bool textExpanded = false;
     string galleryTitle = "";
     string galleryImage = "";
     string galleryLink = "";
     int selectedIdx = -1;
+    bool switchingGallery = false;
     bool lightBoxSet = false;
     string imgBoxClassName = "";
     string textBoxClassName = "";
@@ -67,16 +87,26 @@
         }
     }// getState
 
+    private string shortString(string str) {
+        if(str.Length > 70) {
+            return str.Substring(0, 70) + "...";
+        }else {
+            return str;
+        }
+    }// shortString
+
     private async Task SetGallery(int idx) {
-        if(idx != -1 && idx != selectedIdx) {
+        if(idx != -1 && idx != selectedIdx && !switchingGallery) {
+            switchingGallery = true;
             if(firstLoad == false) {
                 imgBoxClassName = "imgInactive";
                 textBoxClassName = "textInactive";
-                await Task.Delay(200);
+                await Task.Delay(299);
                 StateHasChanged();
             }
             selectedIdx = idx;
             galleryDescription = SkillData.skillDescriptions[idx];
+            shortDescription = shortString(SkillData.skillDescriptions[idx]);
             galleryTitle = SkillData.skillNames[idx];
             galleryImage = SkillData.skillImages[idx];
             galleryLink = SkillData.skillLinks[idx];
@@ -86,25 +116,30 @@
             }
             await Task.Delay(1);
             StateHasChanged();
+            switchingGallery = false;
         }else {
             return;
         }
     }// SetGallery
 
-    protected override async Task OnInitializedAsync() {
-            await SetGallery(0);
-            StateHasChanged();
-            firstLoad = false;
-    }// OnInitializedAsync
+    private void ToggleDesc() {
+        if(textExpanded == false) {
+            textExpanded = true;
+        }else {
+            textExpanded = false;
+        }
+        StateHasChanged();
+    }// setDesc
 
-    private void lightBoxSetClassName() {
+    private async void lightBoxSetClassName() {
         if(lightBoxSet) {
             lightBoxClassName = "show fadeIn";
         }else {
             lightBoxClassName = "show fadeOut";
             StateHasChanged();
-            Task.Delay(500);
+            await Task.Delay(300);
             lightBoxClassName = "hide";
+            StateHasChanged();
         }
     }// lightBoxCetClassName
 
@@ -119,4 +154,11 @@
         lightBoxSetClassName();
         StateHasChanged();
     }// ClearContent
+
+    protected override async Task OnInitializedAsync() {
+            await SetGallery(0);
+            StateHasChanged();
+            firstLoad = false;
+    }// OnInitializedAsync
+
 }

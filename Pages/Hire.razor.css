@@ -4,22 +4,15 @@
     min-height: 100vh;
     align-items: center;
     justify-content: space-between;
-    padding: 5%;
-    padding-bottom: 0;
-    background: #0005;
-}
-
-.upperAccent > svg  {
-    fill: transparent;
-    stroke: orange;
-    stroke-width: 10;
+    padding: 5% 5% 0 5%; 
 }
 
 .pageContent {
     width: 100%;
     max-width: 1000px;
-    padding: 10px 20px 0 20px;
-    height: auto;
+    padding: 10px 20px 5px 20px;
+    height: calc(100% - 100px - 30%);
+    max-height: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -43,16 +36,16 @@
     max-height: fit-content;
     max-width: 500px;
     display: flex;
+    flex-flow: column nowrap;
+    flex-grow: 0;
     justify-content: flex-start;
     -o-justify-content: start;
     align-items: center;
-    flex-flow: column nowrap;
     color: var(--textPrimary);
-    padding: 0 10px;
-    flex-grow: 0;
     background: #0009;
-    border: 1px solid #000;
+    padding: 0 10px;
     margin-top: 2px;
+    border: 1px solid #000;
     border-radius: 4px;
 }
 
@@ -73,9 +66,14 @@ h4 {
     text-align: center;
 }
 
+.pageLink {
+    height: 100px;
+}
+
 .lowerAccent {
-    height: 30%;
+    height: calc(40% - 100px);
     width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -87,7 +85,7 @@ h4 {
 
 .lowerAccent > svg {
     width: 100%;
-    max-height: 60vh;
+    height: 100%;
 }
 
 @media screen and (min-width: 800px) {
@@ -100,7 +98,6 @@ h4 {
     }
     
     .textContainer {
-        width: 80%;
         justify-self: center;
     }
 }
