@@ -101,8 +101,8 @@
             if(firstLoad == false) {
                 imgBoxClassName = "imgInactive";
                 textBoxClassName = "textInactive";
-                await Task.Delay(299);
                 StateHasChanged();
+                await Task.Delay(300);
             }
             selectedIdx = idx;
             galleryDescription = SkillData.skillDescriptions[idx];
@@ -114,8 +114,8 @@
                 imgBoxClassName = "imgActive";
                 textBoxClassName = "textActive";
             }
-            await Task.Delay(1);
             StateHasChanged();
+            await Task.Delay(300);
             switchingGallery = false;
         }else {
             return;

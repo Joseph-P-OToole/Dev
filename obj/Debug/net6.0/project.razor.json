@@ -107,6 +107,39 @@
         }
       },
       {
+        "HashCode": 2047993225,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Index",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -752518809,
+        "Kind": "Components.Component",
+        "Name": "BlazorWASMPortfolio.Pages.Index",
+        "AssemblyName": "BlazorWASMPortfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorWASMPortfolio.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorWASMPortfolio.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1486187548,
         "Kind": "Components.Component",
         "Name": "BlazorWASMPortfolio.Pages.Samples",
@@ -169,39 +202,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "BlazorWASMPortfolio.Pages.Hire",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2047993225,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.Index",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -752518809,
-        "Kind": "Components.Component",
-        "Name": "BlazorWASMPortfolio.Pages.Index",
-        "AssemblyName": "BlazorWASMPortfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorWASMPortfolio.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorWASMPortfolio.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
