@@ -94,6 +94,7 @@
     background: #0008;
     border: var(--borderWidth) solid #000;
     border-radius: 4px;
+    box-shadow: -4px 4px 5px 0px #0002;
 }
 
 .skillName {

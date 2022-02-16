@@ -312,6 +312,7 @@ h1[b-ef8rk3pjgd] {
     margin-top: 2px;
     border: 1px solid #000;
     border-radius: 4px;
+    box-shadow: -4px 4px 5px 0px #0002;
 }
 
 h4[b-00m35mphvn] {
@@ -523,6 +524,7 @@ h4[b-00m35mphvn] {
     background: #0008;
     border: var(--borderWidth) solid #000;
     border-radius: 4px;
+    box-shadow: -4px 4px 5px 0px #0002;
 }
 
 .skillName[b-ygmnus5is1] {
