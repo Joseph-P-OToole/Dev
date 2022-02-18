@@ -16,13 +16,13 @@
             </h4>
             @if(textExpanded) {
                 <p class="skillDesc">
-                    <span class="fullDesc grow">
+                    <span class="fullDesc fadeIn">
                         @galleryDescription
                     </span>
                     @if(galleryLink != "")
                     {
                         <a class="skillLink disableSelect" href=@($"{ @galleryLink }") title=@($"{ @galleryLink }") target="_blank">
-                            &nbsp;check it out&nbsp;<span class="oi oi-arrow-thick-right"></span>
+                            <br>check it out&nbsp;<span class="oi oi-arrow-thick-right"></span>
                         </a>
                     }
                 </p>
@@ -102,7 +102,7 @@
                 imgBoxClassName = "imgInactive";
                 textBoxClassName = "textInactive";
                 StateHasChanged();
-                await Task.Delay(300);
+                await Task.Delay(210);
             }
             selectedIdx = idx;
             galleryDescription = SkillData.skillDescriptions[idx];
@@ -115,7 +115,7 @@
                 textBoxClassName = "textActive";
             }
             StateHasChanged();
-            await Task.Delay(290);
+            await Task.Delay(210);
             switchingGallery = false;
         }else {
             return;
