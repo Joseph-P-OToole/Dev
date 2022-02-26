@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FGQUK5ATgW9MG/zU6kHbxzpZCTvhmq5YTaMKO+oYq88=",
+  "Hash": "Aqcjj2C6S8hN7w37p7CUTO0id63aVwcuSSJFaT92DTI=",
   "Source": "BlazorWASMPortfolio",
   "BasePath": "/",
   "Mode": "Root",
@@ -7002,6 +7002,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\screenshots\\adobe-illustrator-image.png"
+    },
+    {
+      "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\adobe-photoshop-image-1.png",
+      "SourceId": "BlazorWASMPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "assets/screenshots/adobe-photoshop-image-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\screenshots\\adobe-photoshop-image-1.png"
     },
     {
       "Identity": "C:\\Users\\otool\\Documents\\TriOS\\Blazor\\BlazorWASMPortfolio\\wwwroot\\assets\\screenshots\\adobe-photoshop-image.png",
